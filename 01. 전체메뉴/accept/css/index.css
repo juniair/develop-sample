@@ -16,35 +16,33 @@ ul {
     list-style: none;
 }
 
-a {
-    text-decoration: none;
-    color: #333;
-    display: inline-block;
-    font-family: 'Nanum Gothic', sans-serif;
-}
-
 body {}
 
 /* 초기화끝 */
 /* 본문시작 */
 
 #menuTitle {
+    padding:0 10px;
     height: 50px;
-    line-height: 50px;
     font-size: 16px;
-    text-indent: 10px;
-    border-bottom: 1px solid #eee;
-}
-
-.menu_item {
-    padding: 10px 0 10px 10px;
-    border-bottom: 1px solid #eee;
-    line-height: 30px;
+    line-height: 50px;
 }
 
 .menu_items .menu_item {
     display: inline-block;
     width: 100%;
+    padding: 10px 10px 11px 10px;
+    border-top: 1px solid #eee;
+}
+.menu_items .menu_item .link .icon {
+    vertical-align: middle;
+}
+.menu_items .menu_item .link {
+    display:inline-block;
+    font-size:16px;
+    color:#333;
+    text-decoration: none;
+    line-height:30px;
 }
 
 .category_items .category_item {
@@ -71,7 +69,6 @@ body {}
     text-indent: -999999px;
     background: url(../img/icon_allmemucategory_bottom_48x48_2px,2px_x2.png) no-repeat left 10px/200px 50px;
     vertical-align: top;
-    margin-top: 3px;
 }
 
 .icon_category_air {
