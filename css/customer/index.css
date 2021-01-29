@@ -1,0 +1,66 @@
+.menu_Service_wrap{
+    display: table;
+    width: 375px;
+    width: 100%;
+    height: 110px;
+    background-color: #f2f2f2;
+}
+.menu_Servie_call{
+    display: table-cell;   
+    width: 149px;   
+    height: 100px;
+    margin-top: 5px; 
+    border-right: 1px solid#ccc;
+    position: absolute;
+    text-align: center;    
+}
+.menu_Servie_call i{
+    margin-top: 5px;
+}
+.menu_Servie_call dl dt{
+    color: #333;
+    height: 15px;
+	font-style: normal;
+    font-size: 12px;
+	font-weight: bold;
+    line-height:15px; 
+}
+.menu_Servie_call dl dd{
+    color: #333;
+    height: 15px;
+	font-style: normal;
+    font-size: 12px;
+	line-height: 15px;
+}
+.menu_Service_call_realtime{
+    display: table-cell;
+    width : calc(100% - 150px);
+    height:100px;
+}
+
+.menuService_call_realtime_list{
+    position: absolute; 
+    left: calc(68% - 20%);
+    width: 165px;
+    height: 100px;
+    margin-top: 5px;
+}
+.menuService_call_realtime_list li{
+    height: 20px;
+    width: 165px;
+}
+.menuService_call_realtime_list li dl dt{
+    width: 75px;
+    display: table-cell;
+    font-size: 12px;
+    font-weight: bold;    
+    line-height: 20px;
+}
+.menuService_call_realtime_list li dl dd{
+    width: 85px;
+    display: table-cell;
+    color: #333;
+    font-size:12px;
+    line-height: 20px;
+}
+

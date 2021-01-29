@@ -1,0 +1,19 @@
+.swiper-pagination {top: unset !important;right: 8px !important;bottom: 6px !important;left: unset !important;font-size: 12px;line-height: 15px;border-radius: 35px}
+
+.swiper-slide img{width: 100%}
+.swiper-slide.stay img,
+.swiper-slide.room img{height: 224px}
+.swiper-slide.coupon img{width: 280px}
+
+
+@media (min-width: 1024px) {
+    .swiper-slide.stay img,
+    .swiper-slide.room img{height: 611px}
+    .swiper-slide.coupon img{width: 764px}
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .swiper-slide.stay img,
+    .swiper-slide.room img{height: 458px}
+    .swiper-slide.coupon img{width: 574px}
+}

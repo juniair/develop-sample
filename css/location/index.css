@@ -1,0 +1,90 @@
+.category_list{background:#ffffff !important}
+.category_list > li{width:100%;font-size:14px;color:#333333;font-weight:600;text-align: left;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.category_list > li > span{padding-right:6px}
+.category_list > li > span:last-child{border-left:0px}
+.category_list > li > span + span{border-left:1px solid #cccccc;padding-left:6px}
+
+.product_list_component{}
+.product_list_component .fixed{position:fixed;top:25px;left:0px;width:100%;border-bottom: 1px solid #ececec;background-color:#ffffff;z-index:1;}
+.product_list_component .product_list{width:100%}
+
+.location_option_header,.location_map{position:relative}
+
+.sort_list{position:absolute;top:0px;left:10px;height:40px;}
+.sort_item{float:left;}
+.sort_item input[type="radio"]{display:none}
+.sort_item label{display:inline-block;height:40px;font-size:12px;color:#333333;line-height:40px}
+.sort_item input[type="radio"] + label:before{display:inline-block;width:16px;height:16px;background: url(/images/s_images/list_sort_tab_off.gif) no-repeat;background-size:contain;margin-right:5px;vertical-align: middle;content:''}
+.sort_item input[type="radio"]:checked + label:before{background: url(/images/s_images/list_sort_tab_on2.png) no-repeat;background-size: contain;}
+.product_items{}
+.product_item{border-top:6px solid #eeeeee}
+.product_item.loading,.product_item.empty{background-color:#ffffff;font-size:14px;color:#333333;text-align:center}
+.product_item.loading{padding:10px 0}
+.product_item.empty{padding-top:30px}
+.product_item.empty .txt{font-size:14px;color:#333333;text-align:center;line-height:24px}
+
+.btn_group{position:absolute;z-index:4}
+.btn_group.default{top:0px;right:10px;padding:8px 0px 8px 0px;}
+.btn_group.zoom{right:10px;bottom:40px}
+.btn_group.zoom_with_selected.stay{right:10px;bottom:260px}
+.btn_group.zoom_with_selected:not(.stay){right:10px;bottom:150px}
+.btn_group.position{top:0px;left:10px;padding:8px 0px 8px 0px;}
+.btn_group .btn{width:56px;height:24px;background:#ffffff;font-size:14px;color:#333333;line-height:14px}
+.btn.btn_list{border-left:1px solid #cccccc;border-top:1px solid #cccccc;border-bottom:1px solid #cccccc;border-right:1px solid transparent;border-radius: 35px 0 0 35px;}
+.btn.btn_location_filter{border-left:1px solid #cccccc;border-top:1px solid #cccccc;border-bottom:1px solid #cccccc;border-right:1px solid #cccccc;border-radius: 0 35px 35px 0;}
+.btn.btn_map{border-left:1px solid #cccccc;border-top:1px solid #cccccc;border-bottom:1px solid #cccccc;border-right:1px solid transparent;border-radius:35px 0 0 35px;}
+.btn.btn_map_single{border:1px solid #cccccc;border-radius: 35px;}
+.btn .btn_txt{font-size:14px;color:#333333}
+.btn.zoom{display:block;width:40px;height:40px;background:#ffffff}
+.btn.zoom.in{border-left:1px solid #cccccc;border-top:1px solid #cccccc;border-bottom:1px solid transparent;border-right:1px solid #cccccc;}
+.btn.zoom.out{border:1px solid #cccccc}
+.btn.position{width:72px;border:1px solid #cccccc;border-radius: 35px}
+
+.dl{display:inline !important}
+.dlb{display:inline-block !important}
+
+.selected_item{position:absolute;bottom:0px;left:0px;width:100%;border-bottom:1px solid #e1e1e1;background:#ffffff;z-index:7}
+.discount_rate{width:62px;height:18px;border-radius:35px;background-color:#e21b1b;font-size:12px;color:#ffffff;text-align:center;line-height:16px;}
+
+.selected_item.stay{height:240px}
+.selected_item.stay .container{position:relative;clear:both;overflow: hidden;}
+.selected_item.stay .container.image{height:190px}
+.selected_item.stay .container.image .thumbnail{width:100%;height:100%}
+.selected_item.stay .container.image .tag{display:inline-block;position:absolute;top:0px;right:0px;width:102px;height:30px;font-size:14px;color:#ffffff;text-align:center;line-height:30px;}
+.selected_item.stay .container.image .tag.happy_time{background-color:#ff9900}
+.selected_item.stay .container.image .tag.real_time{background-color:#2055c5}
+.selected_item.stay .container.image .discount_rate{position:absolute;bottom:0px;right:6px;width:62px;height:18px;border-radius:35px;background-color:#e21b1b;font-size:12px;color:#ffffff;text-align:center;line-height:16px;}
+
+.selected_item.stay .container.content{}
+.selected_item.stay .container.content .other{width:50%;}
+.selected_item.stay .container.content .name{margin:0px;font-size:15px;font-weight:bold;color:#333333;    text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+.selected_item.stay .container.content .priceWrap{text-align:right}
+.selected_item.stay .container.content .priceWrap .price{display: inline-grid;grid-template-columns: auto 0.25rem auto;grid-template-rows: auto 0.25rem auto;grid-template-rows: auto 0.25rem auto;grid-template-areas:"price_title . price_value""price_title . price_value""price_title . price_value";}
+.selected_item.stay .container.content .online_price{width:50%;}
+.selected_item.stay .container.content .member_price{width:50%;}
+.selected_item.stay .container.content .other .rate,
+.selected_item.stay .container.content .other .distance{font-size:12px;color:#7c7c7c}
+.selected_item.stay .container.content .other .rate::after{content:'|';margin-left:4px;font-size:12px;color:#7c7c7c}
+.selected_item.stay .container.content .other .rate .icon_rate{margin-top:2px;background-size: 13px 12px;}
+
+.selected_item:not(.stay){height:130px;}
+.selected_item:not(.stay) .container{position:relative;clear:both;overflow: hidden;}
+.selected_item:not(.stay) .container.image{float:left;width:150px;height:130px}
+.selected_item:not(.stay) .container.image .thumbnail{width:100%;height:100%}
+
+.selected_item:not(.stay) .container.content{width:calc(100% - 170px);height:114px}
+.selected_item:not(.stay) .container.content .other{width:50%;}
+.selected_item:not(.stay) .container.content .name{margin:0px;font-size:15px;font-weight:bold;color:#333333;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;line-height:16px}
+.selected_item:not(.stay) .container.content .name + .discount_rate{margin-top:24px;}
+.selected_item:not(.stay) .container.content .priceWrap{text-align:right}
+.selected_item:not(.stay) .container.content .priceWrap .price{display: inline-grid;grid-template-columns: auto 0.25rem auto;grid-template-rows: auto 0.25rem auto;grid-template-areas:"price_title . price_value""price_title . price_value""price_title . price_value";}
+.selected_item:not(.stay) .container.content .online_price{width:50%;}
+.selected_item:not(.stay) .container.content .member_price{width:50%;}
+.selected_item:not(.stay) .container.content .other .rate,
+.selected_item:not(.stay) .container.content .other .distance{font-size:12px;color:#7c7c7c}
+.selected_item:not(.stay) .container.content .other .rate::after{content:'|';margin-left:4px;font-size:12px;color:#7c7c7c}
+.selected_item:not(.stay) .container.content .other .rate .icon_rate{margin-top:3px;background-size: 13px 12px;}
+
+
+.product_list_component .rentcar-company-label-component{height:40px;line-height:40px;}
+.product_list_component .rentcar-company-label-component .distance .icon_location{margin-top:14px;}

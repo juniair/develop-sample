@@ -1,0 +1,243 @@
+/* 상품 카테고리 링크 영역 정의 */
+
+.category_link_container{border-top:6px solid #eeeeee;border-bottom:6px solid #eee;font-size:0}
+.category_link_items{display:flex;flex-direction:row;flex-wrap:wrap;padding:6px 10px;box-sizing:border-box;}
+.category_link_items .category_link_item{width:25%;height:58px}
+.category_link_items .category_link_item .category_link.txt{display:block;text-align:center;}
+.category_link_items .category_link_item .category_link .txt{display:block;font-size:12px;color:#333;font-weight:bold;text-align:center;}
+/* 상품 카테고리 링크 영역 정의 */
+
+/* 실시간 인기 상품 영역 정의 */
+.best_product_conatiner {padding-right:6px;padding-left:6px;width:100%;height:56px;border-bottom:6px solid #eee;background:#fff;box-sizing:border-box;font-size:0;}
+.best_product_conatiner .container {display:inline-block;width:calc(100% - 92px);height:50px}
+.best_product_conatiner .container .best_products {display:inline-block;width:100%}
+.best_product_conatiner .container .best_products .best_product {}
+.best_product_conatiner .container .best_products .best_product .link {display:inline-block;width:100%;height:100%;line-height:50px}
+.best_product_conatiner .container .best_products .best_product .link .icon {vertical-align:middle}
+.best_product_conatiner .container .best_products .best_product .link .txt {display:inline-block;font-size:14px;vertical-align:middle}
+.best_product_conatiner .container .best_products .best_product .link .txt.best {margin-left:6px;margin-right:6px;width:22px;text-align:center;color:#2055c5;vertical-align:middle}
+.best_product_conatiner .container .best_products .best_product .link .txt.name {width:calc(100% - 72px);color:#333;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;}
+.best_product_conatiner .btn_more {display:inline-block;margin-left:10px;width:82px;height:100%;font-size:14px;vertical-align:top}
+.best_product_conatiner .btn_more .txt {display:inline-block;width:58px;font-size:14px;color:#6d95ec;vertical-align:middle}
+.best_product_conatiner .btn_more .icon {vertical-align:middle}
+
+
+
+/* 실시간 인기 상품 영역 정의 [end]*/
+
+
+/* 메인 상품 리스트 영역 정의 */
+.product_container + .product_container{border-top:6px solid #eeeeee;}
+.product_container .product_header{padding-left:6px;border-bottom:1px solid #eeeeee;line-height:49px}
+.product_container .Product_list .product_item{width:100%;}
+
+/* 숙박 영역 정의 */
+.product_item.stay{padding:6px}
+.product_item.stay .wrap_img{position:relative;width:100%;height:172px;}
+.product_item.stay .wrap_img .type_maker{position:absolute;top:0px;right:0px;width:102px;font-size:14px;color:#ffffff;text-align:center;line-height:30px;}
+.product_item.stay .wrap_img .type_maker.happy_time{background-color:#ff9900;}
+.product_item.stay .wrap_img .type_maker.real_time{background-color:#2055c5;}
+.product_item.stay .wrap_img > img,
+.product_item.stay .wrap_img .thumbnail{width:100%;height:100%;}
+.product_item.stay + .product_item.stay{border-top:6px solid #eeeeee}
+
+.product_item.stay  .wrap_ctt {position: relative;background-color: #ffffff}
+.product_item.stay  .wrap_ctt .region,.wrap_ctt .selCount, .wrap_ctt .distance{display:inline-block;width: 45%; font-size: 12px;color: #7c7c7c;}
+.product_item.stay  .wrap_ctt .region + .distance::before{content: "|";display: inline;font-size:12px;color: #7c7c7c;margin-right: 4px;vertical-align: text-top;}
+.product_item.stay  .wrap_ctt .selCount {float: right;text-align: right;}
+.product_item.stay .wrap_ctt > p {color: #333333;font-size: 15px;margin: 6px 0px;}
+.product_item.stay .wrap_ctt > p > em {display: -webkit-box;font-style: normal;line-height: 17px;overflow: hidden;text-overflow: ellipsis;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
+.product_item.stay .wrap_ctt strong small {font-size: 12px;}
+.product_item.stay .wrap_ctt .rateWrap {font-size: 12px;color: #7c7c7c;}
+.product_item.stay .wrap_ctt .priceWrap{text-align: right;}
+.product_item.stay .wrap_ctt .priceWrap  .price {
+    display: inline-grid;
+    grid-template-columns: auto 0.25rem  auto 0.25rem 2.25rem;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "price_title . price_value . price_rate"
+        "price_title . price_value . price_rate"
+        "price_title . price_value . price_rate";
+}
+.product_item.stay .wrap_ctt .priceWrap .price .origin {font-size: 12px;color: #b7b7b7;}
+.product_item.stay .wrap_ctt .priceWrap .price .online {font-size: 12px;color: #7c7c7c;}
+.product_item.stay .wrap_ctt .priceWrap .price .members {font-size: 15px;color: #e21b1b;font-weight: bold;line-height: 1.5;}
+.product_item.stay .wrap_ctt .priceWrap .price .title {text-align: right;grid-area: price_title;}
+.product_item.stay .wrap_ctt .priceWrap .price .value {grid-area: price_value;}
+.product_item.stay .wrap_ctt .priceWrap .price .value .origin {text-decoration: line-through solid #ee8888;}
+.product_item.stay .wrap_ctt .priceWrap .price .value .online {text-decoration: line-through solid #e21b1b;}
+.product_item.stay .wrap_ctt .priceWrap .price .value .decimal {font-size: 10px;}
+.product_item.stay .wrap_ctt .priceWrap .price .value .members > .decimal {font-size: 12px;}
+
+.product_item.stay .wrap_ctt .priceWrap .price .rate {
+    display: grid;
+    margin: auto;
+    font-size: 12px;
+    color: #ffffff;
+    grid-template-rows: 23px 23px;
+    grid-template-areas: 
+        "online"
+        "members";
+    grid-area: price_rate;
+}
+.product_item.stay .wrap_ctt .priceWrap > div.price .rate > p {text-align: center; text-indent: initial;padding-top: 3px;}
+.product_item.stay .wrap_ctt .priceWrap > div.price .rate > p > span {font-size: 7px;}
+.product_item.stay .wrap_ctt .priceWrap > div.price .online_discount {grid-area: online;}
+.product_item.stay .wrap_ctt .priceWrap > div.price .members_discount {grid-area: members;}
+.product_item.stay .wrap_ctt .priceWrap > div.price_rate {display: contents;}
+.product_item.stay .wrap_ctt .priceWrap > div > span {float: left;}
+.product_item.stay .wrap_ctt .priceWrap dl dt {margin-right: 3px; float: left;}
+.product_item.stay .wrap_ctt .priceWrap dl dd { }
+/* 숙박 영역 정의 */
+
+
+
+/* 렌트카 영역 정의 */
+.product_item.rentcar {background-color: #ffffff;}
+.product_item.rentcar + .product_item.rentcar{border-top:6px solid #eeeeee}
+.product_item.rentcar .car_info {display: flex;width: calc(100% - 22px);padding: 16px 11px;border-bottom: 1px solid #e1e1e1;justify-content: space-between;}
+.product_item.rentcar .car_info .wrap_ctt {display: block;font-size: 18px;width: calc(100% - 182px);}
+.product_item.rentcar .car_info .wrap_ctt .txt.name {font-size:18px;color:#555555;font-style: normal;font-weight: bold;line-height: 24px;}
+.product_item.rentcar .car_info .wrap_ctt .txt.price {display: block;color: #e21b1b;font-size: 17px;line-height: 28px;letter-spacing:-1px;}
+.product_item.rentcar .car_info .wrap_ctt .txt.ect {font-size: 12px;color: #666666;line-height: 18px;}
+.product_item.rentcar .car_info .wrap_img {display: block;width: 182px;height: 128px;}
+.product_item.rentcar .car_info .wrap_img > img{width: 100%;height: 100%;}
+
+
+.rentcar-company-label-component{width:100%;height:36px;margin:0px;padding-left:10px;padding-right:10px;}
+.rentcar-company-label-component .name{font-size:16px;font-weight:bold;color:#333333;line-height:34px;}
+.rentcar-company-label-component .distance{font-size:12px;color:#7c7c7c}
+.rentcar-company-label-component .distance::before{content:'';border-left:1px solid #cccccc;margin-right:4px;}
+.rentcar-company-label-component .distance .icon_location{margin-top:12px;margin-right:2px;}
+.rentcar-company-item-component{position:relative;}
+.rentcar-company-item-component .company_info{border-bottom:1px solid #e1e1e1;line-height:36px}
+.rentcar-company-item-component .company_info .name{font-size:16px;font-weight:bold;color:#333333}
+.rentcar-company-item-component .company_info .distance{font-size:12px;color:#7c7c7c}
+.rentcar-company-item-component .company_info .distance::before{content:'';border-left:1px solid #cccccc;margin-right:4px;}
+
+
+/* 차량 정보 UI 컴포넌트 스타일  */
+.rentcar-company-item-component .company_item{position:relative;}
+.rentcar-company-item-component .company_item{border-bottom:1px solid #e1e1e1;}
+.rentcar-company-item-component .company_item .name{font-size:12px;font-weight:bold;color:#333333}
+.rentcar-company-item-component .company_item .btn_open_thumbnail{font-size:12px;font-weight:bold;color:#3d59a8;z-index:2;}
+.rentcar-company-item-component .company_item .btn_open_thumbnail::before{content:'';border-left:1px solid #cccccc;margin-right:4px;}
+.rentcar-company-item-component .company_item .link{position:absolute;top:32px;right:10px;width: 82px;height: 32px;background-color: #2055c5;font-size: 12px;font-weight: bold;color: #ffffff;text-align: center;line-height: 30px;}
+.rentcar-company-item-component .company_item .data_price_label{}
+.rentcar-company-item-component .company_item .data_price_label.online{margin-top:10px;margin-right:8px;font-size:12px;color:#7c7c7c;text-align:right;line-height:16px;clear: both;overflow: hidden;}
+.rentcar-company-item-component .company_item .data_price_label.online .txt_title{float:left;}
+.rentcar-company-item-component .company_item .data_price_label.online .txt_data{float:left;margin-left:6px}
+.rentcar-company-item-component .company_item .data_price_label.online .txt_data .strike_through{text-decoration-color:#e12b1b}
+.rentcar-company-item-component .company_item .data_price_label.members{height:18px;font-size:14px;font-weight:bold;color:#e12b1b;text-align:right;line-height:18px;}
+.rentcar-company-item-component .company_item .data_price_label.members::after{content:'';clear: both;overflow: hidden;}
+.rentcar-company-item-component .company_item .data_price_label.members .txt_title{float:left}
+.rentcar-company-item-component .company_item .data_price_label.members .txt_data{float:left;margin-left:6px}
+.rentcar-company-item-component .company_item .txt_info{font-size:12px;color:#555555;}
+.rentcar-company-item-component .company_item .txt_info.main{line-height:16px;}
+.rentcar-company-item-component .company_item .txt_info.main span:not(.license),
+.rentcar-company-item-component .company_item .txt_info.ect span:not(.txt):not(.model){border-left:1px solid #cccccc;padding-left:4px}
+.rentcar-company-item-component .company_item .txt_info.ect{line-height:16px}
+.rentcar-company-item-component .company_item .txt_info.ect .insurance_limit_amount{color:#3d59a8}
+
+.rentcar-company-item-component .company_item .thumbnail{position:absolute;top:28px;left:10px;width:170px;height:160px;border:1px solid #cccccc;border-radius:5px;background-color:#ffffff;z-index:2;}
+.rentcar-company-item-component .company_item .thumbnail .btn_close{position:absolute;top: 0px;right: 0px;width:24px;height:24px;}
+.rentcar-company-item-component .company_item .thumbnail img{width:170px;height:136px;border-radius:5px 5px 0px 0px;}
+.rentcar-company-item-component .company_item .thumbnail .warning{font-size: 10px;line-height: 24px;}
+
+.rentcar-company-item-component .btn_more{width: 100%;height: 32px;font-size: 12px;color: #333333;}
+
+
+.rentcar-company-car-item-component{width:100%;height:266px;}
+.rentcar-company-car-item-component .info{}
+.rentcar-company-car-item-component .info.main{padding:28px 10px;height:136px;clear:both;overflow:hidden}
+.rentcar-company-car-item-component .info.main img{float:right;width:170px;height:136px;}
+.rentcar-company-car-item-component .info.main .name{display:inline-block;font-size:16px;font-weight:bold;color:#333333}
+.rentcar-company-car-item-component .info.main .data_price_label.members{display: inline-block;margin-top:2px;height:18px;font-size:16px;font-weight:bold;color:#e12b1b;text-align:right;line-height:18px;}
+.rentcar-company-car-item-component .info.main .data_price_label.members::after{content:'';clear: both;overflow: hidden;}
+.rentcar-company-car-item-component .info.main .data_price_label.members .txt_title{float:left}
+.rentcar-company-car-item-component .info.main .data_price_label.members .txt_data{float:left;margin-left:6px}
+.rentcar-company-car-item-component .info.main .spec{margin:6px 0px 0px 0px;font-size:12px;color:#555555;line-height:14px}
+.rentcar-company-car-item-component .info.main .spec:nth-child(2){margin-top:0px;}
+.rentcar-company-car-item-component .info.ect{margin:0px;padding:0px 10px;height:32px;font-size:12px;color:#555555;line-height:16px;}
+.rentcar-company-car-item-component .info.ect span:not(.txt):not(.model){border-left:1px solid #cccccc;padding-left:6px}
+.rentcar-company-car-item-component .info.ect .insurance_limit_amount{color:#3d59a8}
+
+.rentcar-company-car-item-component .link{display:inline-block;margin-top:8px;width:100%;height:34px;background-color:#2055c5;font-size:12px;font-weight:bold;color:#ffffff;text-align:center;line-height:34px}
+/* 렌트카 영역 정의 */
+
+/* 티켓, 뷔페/맛집, 여행/편의 영역 정의 */
+.product_item.ticket_type + .product_item.ticket_type {border-top: 6px solid #eeeeee}
+.product_item.ticket_type .wrap_ctt .region,
+.product_item.ticket_type .wrap_ctt .selCount,
+.product_item.ticket_type .wrap_ctt .coupon_type,
+.product_item.ticket_type .wrap_ctt .grade {display: inline-block;width: auto;font-size: 12px;color: #7c7c7c;}
+.product_item.ticket_type .wrap_ctt .coupon_type + .region::before {content: "|";margin: 0px 3px 0px -3px}
+.product_item.ticket_type .wrap_ctt .coupon_type + .distance::before{content: "|";display: inline;font-size: 12px;color: #7c7c7c;margin-right: 4px;vertical-align: text-top;}
+.product_item.ticket_type .wrap_ctt .region + .distance::before{content: "|";display: inline;font-size: 12px;color: #7c7c7c;margin-right: 4px;vertical-align: text-top;}
+
+.product_item.ticket_type .wrap_ctt .selCount {float: right;text-align: right;margin-top: 4px;}
+.product_item.ticket_type .wrap_ctt .name {font-size: 15px;color: #333333;margin: 4px 0px;}
+.product_item.ticket_type .wrap_ctt .name > em {display: -webkit-box;font-style: normal;overflow: hidden;text-overflow: ellipsis;line-height: 17px;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
+
+.product_item.ticket_type {background-color: #eeeeee;}
+.product_item.ticket_type{margin-bottom: 5px}
+.product_item.ticket_type a {display: flex;padding: 6px;background-color: #ffffff;color: #000000;justify-content: space-between;}
+.product_item.ticket_type .wrap_img {width: 140px;height: 132px}
+.product_item.ticket_type .wrap_img img {width: 100%;height: 100%;border-radius: 3px;}
+.product_item.ticket_type .wrap_ctt {width: calc(100% - 140px);padding-left: 10px;box-sizing: border-box;}
+.product_item.ticket_type .wrap_ctt .priceWrap {margin-top: 7px;text-align: right;}
+.priceWrap > div.price {
+    display: inline-grid;
+    grid-template-columns: auto 0.25rem  auto 0.25rem 2.25rem;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "price_title . price_value . price_rate"
+        "price_title . price_value . price_rate"
+        "price_title . price_value . price_rate";
+}
+.product_item.ticket_type .priceWrap > div.price .origin {font-size: 12px;font-size: 12px;color: #b7b7b7;}
+.product_item.ticket_type .priceWrap > div.price .online {font-size: 12px;font-size: 12px;color: #7c7c7c;}
+.product_item.ticket_type .priceWrap > div.price .members {font-size: 15px;font-size: 0.9375rem;color: #e21b1b;font-weight: bold;line-height: 1.5;}
+.product_item.ticket_type .priceWrap > div.price .title {text-align: right;grid-area: price_title;}
+.product_item.ticket_type .priceWrap > div.price .value {grid-area: price_value;text-align: right;}
+.product_item.ticket_type .priceWrap > div.price .value .origin {text-decoration: line-through solid #ee8888;}
+.product_item.ticket_type .priceWrap > div.price .value .online {text-decoration: line-through solid #e21b1b;}
+.product_item.ticket_type .priceWrap > div.price .value .decimal {font-size: 10px; font-size: .625rem;}
+.product_item.ticket_type .priceWrap > div.price .value .members > .decimal {font-size: 12px; font-size: .75rem;}
+
+.product_item.ticket_type .priceWrap > div.price .rate {
+    display: grid;
+    margin: auto;
+    font-size: 12px;
+    color:#ffffff;
+    grid-template-rows: 23px 23px;
+    grid-template-areas: 
+        "online"
+        "members";
+    grid-area: price_rate;
+    
+}
+.product_item.ticket_type .priceWrap > div.price .rate > p {padding-top: 3px; text-align: center; text-indent: initial;}
+.product_item.ticket_type .priceWrap > div.price .rate > p > span {font-size: 7px;font-size: 0.4375rem;}
+.product_item.ticket_type .priceWrap > div.price .online_discount {grid-area: online;}
+.product_item.ticket_type .priceWrap > div.price .members_discount {grid-area: members;}
+
+
+
+/* 상세 */
+
+.section_coupon_summary{width: 100%;padding-bottom: 5px;background-color: #ececec}
+
+.list_coupon_gallery .item_coupon_gallery img{height: 280px !important}
+
+
+@media (min-width: 1024px) {
+	.list_coupon_gallery .item_coupon_gallery img{height: 764px !important}
+}
+
+@media (min-width: 768px) and (max-width:1023px) {
+	.list_coupon_gallery .item_coupon_gallery img{height: 574px !important}
+}
+
+
+

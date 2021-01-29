@@ -1,0 +1,18 @@
+.wrap_input.idCard {
+    border: none;
+}
+.wrap_input.idCard input {
+    border: 1px solid #ccc;
+    width:25%;
+} 
+.wrap_input.idCard span {
+    font-size: 18px;
+    line-height: 34px;
+}
+
+#posfix_id.focus_on {
+    display: inline-block;
+}
+#posfix_id.focus_off {
+    display: none;
+}

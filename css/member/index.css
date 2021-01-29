@@ -1,0 +1,22 @@
+.content{}
+.di_ib{display:inline-block}
+.txt{font-size:14px;color:#333333}
+.txt_b{font-size:16px;font-weight:bold}
+.txt_caption{margin:0px auto}
+ol > li dl{margin:0px auto}
+.btn_more{display:block;margin:0px auto;font-size:14px;font-family:inherit;line-height:17px;letter-spacing:-1px}
+.txt_label{font-size:16px;color:#333333;line-height:23px}
+.option_list{}
+.option_list .option_item{}
+.option_list .option_item .txt_label{font-size:16px;line-height:normal;font-style:normal}
+.option_list .option_item .txt{font-size: 15px;color:#333333}
+.file_component{}
+.file_component input[type="file"]{display: none;}
+.file_component label{display:inline-block;width:96px;height:40px;font-size:14px;color:#ffffff;line-height:40px;background-color:#999999}
+.file_component .upload_name{padding-left:6px;width:66.08%;height:40px;background-color:#ffffff;border:1px solid #e5e5e5;font-size:14px;color:#333333}
+.btn_group button{height:50px;border-radius:3px;font-size:16px;text-align:center;line-height:50px;}
+.btn_next{width:calc(50% - 4px);border:1px solid #000000;color:#000000;background-color:#ffffff}
+.btn_confirm{width:calc(50% - 4px);color:#ffffff;background-color:#000000}
+.btn_close{position:absolute;top:12px;right:12px}
+.how_to_content em{font-style:normal}
+.txt_sky{color:#218ecd}

@@ -1,0 +1,24 @@
+.option_list{}
+.option_list li + li {margin-top:16px}
+		
+.label_txt{font-size:14px;font-weight:bold;color:#333333;line-height:18px;}
+.label_txt.my_location{overflow:hidden}
+.label_txt.location{line-height:40px}
+
+.select_component{background: url("/images/ico/selectbox/icon_downarrow_40x40.png")  no-repeat 110% center;}
+.select_region{width:234px;height:40px;padding-left:10px;-webkit-appearance: none;-moz-appearance: none;appearance: none}
+.option_componet{}
+.option_componet > input[type="radio"]{display:none}
+.option_componet > label{display:inline-block;border:1px solid #333333;width:calc(100% - 2px);height:38px;font-size:14px;color:#333333;text-align:center;line-height:40px}
+.option_componet > input[type="radio"]:checked + label{border-color:#ff6600;color:#ff6600}
+.button_component{display:inline-block;background-color:#dbdbdb;font-size:16px;font-weight:bold;color:#333333;text-align:center;line-height:50px}
+.button_component.btn_enabled{background-color:#ff6600;color:#ffffff;}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+    .select_component{background: url("/images/ico/selectbox/icon_downarrow_80x80.png") no-repeat 110% center;}
+}

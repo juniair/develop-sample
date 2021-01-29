@@ -1,0 +1,142 @@
+select {
+    width: 79%;
+    padding: 10px;
+    padding: 0.625rem;
+    border: none;
+    background: url(/images/s_images/bg_select_payway.gif) center right no-repeat;
+}
+
+
+
+.gender {
+    display: inline-block;
+    width: calc(79% - 20px);
+    margin: 10px;
+}
+.radio01:first-child {
+    margin-right: 30px;
+}
+input:disabled {
+    background-color: white;
+}
+
+.header {
+    margin-top: 200px;
+    text-align: center;
+}
+
+.header img.logo {
+    /* display: block !important; */
+    width: 50%;
+    /* margin-top: 100px !important; */
+    /* margin-left: auto !important;
+    margin-right: auto !important; */
+}
+.header .sub_logo {
+    /* display: block; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin-top: 22px;
+}
+
+.container {
+    margin-top: 200px;   
+}
+
+.find_account_box.join_complete {
+    background: url(/images/common/logo_1.png) no-repeat;
+    background-position: center bottom 35px;
+    background-size: 266px 38px;
+}
+
+
+.title {
+    border-bottom: 2px solid #000;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title h2 {
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 120px;
+}
+
+.wrap_content {
+    width: 75%;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.wrap_content .description {
+    margin-top: 70px;
+}
+
+.wrap_content p {
+    color: #666;
+    font-size: 32px;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+.btn_join {
+    margin-top:150px;
+    width: 60%;
+    height: 100px;
+    background-color: #000;
+    color: #fff;
+    font-size: 32px;
+    line-height: 50px;
+}
+
+
+.user_join_section .userInfo .email_component .email{display:inline-block;border:1px solid #cccccc;margin:0px 0px 0px 0px;padding-left:11px;width:29.789%;height:37px;color:#000000}
+.user_join_section .userInfo .email_component .txt{display:inline-block;border: 0px;margin:0px -6px 0px -7px;width:5.01%;height:37px;font-size:13px;color:#000000;text-align:center}
+.user_join_section .userInfo .email_component .email .txt_email_prefix,
+.user_join_section .userInfo .email_component .email .txt_email_posfix{padding-left:10px;padding-right:10px;margin:0px;width:calc(100% - 20px);height:37px}
+.user_join_section .userInfo .email_component .email.select{margin:0px 0px 0px -1px;background: url(/images/s_images/bg_select_payway.gif) center right no-repeat;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:6px;width:25.96%;height:39px;font-size:13px;color:#000000;}
+.user_join_section .userInfo .email_component .email.select option{padding-left:6px;}
+
+.frm_user .btn{width:90.4%;height:50px;font-size:16px;color:#ffffff}
+.frm_user .btn.btn_next{background-color:#2055c5;}
+.frm_user .btn.btn_next{margin-right:18px;margin-bottom:45px;margin-left:18px;}
+pre{
+    padding:10px;
+    overflow: auto;
+    white-space: pre-wrap; /* pre tag내에 word wrap */
+    color:#555;
+    font-size:.8rem;
+    line-height:1rem;
+}  
+
+
+/* 설문지 CSS 정의 */
+.member_report_layer{}
+.member_report_layer .txt.report_intro_desc{display:block;font-size:14px;color:#000000;font-weight:bold;letter-spacing:-1px;}
+.member_report_layer .report_container{margin-top:24px;margin-bottom:58px;background-color:#ffffff;width: 100%;height:622px}
+.member_report_layer .report_container .report_content {}
+.member_report_layer .report_container .report_content .report_question.txt{height:14px;font-size:14px;color:#000000;font-weight:bold;line-height:14px}
+.member_report_layer .report_container .report_content .report_question.txt .opt.txt{color:#6d95ec}
+.member_report_layer .report_container .report_content .opt_list{}
+.opt_list .opt_item{height:16px;line-height:14px;}
+.opt_list .opt_item .opt_value + .opt_label{position:relative;display: inline-block;padding-left: 30px;font-size: 14px;line-height: 16px;}
+.opt_list .opt_item .opt_value + .opt_label::before{position:absolute;top:0px;left:0px;border: 1px solid #cccccc;border-radius:100%;width:14px;height:14px;text-align:center;content:''}
+.opt_list .opt_item .opt_value:checked + .opt_label{color:#6d95ec}
+.opt_list .opt_item .opt_value:checked + .opt_label::before{position:absolute;top:0px;left:0px;border: 1px solid #6d95ec;border-radius:100%;width:14px;height:14px;text-align:center;content:''}
+.opt_list .opt_item .opt_value:checked + .opt_label::after{position:absolute;top:3px;left:3px;border-radius: 100%;background-color:#6d95ec;width:10px;height:10px;text-align:center;content:''}
+.member_report_layer .report_container .report_content .txt_request{border:1px solid #cccccc;width:calc(100% - 50px);height:118px;font-size:14px;color:#333333;box-shadow:none;resize:none;overflow:auto;outline:none}
+.member_report_layer .report_container .report_content .txt_counter{font-size:14px;color:#666666;text-align:right;}
+
+.member_join .join_content .join_form .member_join_from .btn,
+.btn{margin-top:30px;margin-bottom:45px;width:100%;height:50px;font-size:16px;font-weight:bold;color:#ffffff}
+.btn.btn_join{background-color:#2055c5;}
+.btn.btn_disabled{background-color:#cccccc;}
+
+.di_no{display:none;}

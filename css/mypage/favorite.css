@@ -1,0 +1,40 @@
+body{font-size: 0px;}
+.tab-container{}
+.tab-container .tab-headers{clear:both;overflow:hidden}
+.tab-container .tab-headers .tab-header{float:left;border-bottom:1px solid #cccccc;background:#f2f2f2;width:50%;height:50px;font-size:16px;color:#333333;font-weight:bold;box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;}
+.tab-container .tab-headers .tab-header.on{border-bottom:1px solid transparent;background:#ffffff}
+.tab-header + .tab-header{border-left:1px solid #cccccc}
+.tab-container .tab-content{display:none}
+.tab-container .tab-content.on{display:block}
+.tab-container .tab-content .favorite_items{border-top:1px solid #cccccc}
+.tab-container .tab-content .favorite_items .favorite_item{margin:0px 14px;padding:14px 0px;border-bottom:1px solid #cccccc}
+.tab-container .tab-content .favorite_items .favorite_item + .favorite_item{}
+.tab-container .tab-content .favorite_items .favorite_item .item_content{display:inline-block;width:calc(100% - 34px);height:100%;}
+.tab-container .tab-content .favorite_items .favorite_item .thumbnail{width:82px;height:82px}
+.tab-container .tab-content .favorite_items .favorite_item .item_summary{display:inline-block;position:relative;width:calc(100% - 94px);height:82px;}
+.tab-container .tab-content .favorite_items .favorite_item .item_summary .txt{font-size:12px;color:#7c7c7c}
+.tab-container .tab-content .favorite_items .favorite_item .item_summary .txt.type + .txt.area{border-left:1px solid;padding-left:6px;margin-left:6px;}
+.tab-container .tab-content .favorite_items .favorite_item .item_summary .txt.name{margin-top:4px;width:100%;font-size:14px;color:#333333;font-weight:bold;line-height:16px}
+.tab-container .tab-content .favorite_items .favorite_item .item_summary .txt.around{display:inline-block;max-width:calc(100% - 32px);text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;line-height:14px;}
+.tab-container .tab-content .favorite_items .favorite_item .item_summary .txt.posfix_around{display:inline-block;vertical-align:bottom;margin-left:4px;line-height:14px;}
+.tab-container .tab-content .favorite_items .favorite_item .item_summary .txt.etc{display:inline-block;margin-left:2px;width:20px;}
+.tab-container .tab-content .favorite_items .favorite_item .item_summary .txt.price{position:absolute;bottom:0px;width:100%;font-weight:bold;}
+.tab-container .tab-content .favorite_items .favorite_item .item_summary .txt.price .label{font-size:16px;color:#e21b1b;text-align:left;}
+.tab-container .tab-content .favorite_items .favorite_item .item_summary .txt.price .money{font-size:16px;color:#e21b1b;text-align:right;}
+.tab-container .tab-content .empty-content{display:none;margin-top:40px;text-align:center;}
+.tab-container .tab-content .empty-content.on{display:block}
+.tab-container .tab-content .empty-content .txt{font-size: 14px;color:#333333;}
+
+.all_check_content{width:100%;height:50px;clear:both;overflow:hidden;line-height:40px;}
+.chk_container{margin-top:10px;height:40px;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;}
+.chk_container input[type="checkbox"]{display:none}
+.chk_container input[type="checkbox"] + label{position: relative;font-size:16px;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;}
+.icon_close2{display: inline-block;overflow: hidden;background: url(/images/ico/button/icon_close_x2.png) no-repeat top left / 16px 16px}
+.chk_container input[type="checkbox"] + label .icon_check{display: inline-block;overflow: hidden;width:24px;height:24px;background: url(/images/ico/checkbox/icon_check_type2_x1.png) no-repeat 0 0;background-position:0px 0px;vertical-align: top;text-indent: -9999px;}
+.chk_container input[type="checkbox"]:checked + label .icon_check{background-position:-30px 0px;}
+.chk_container label{}
+.chk_container label .txt_title{}
+
+.all_check_content .btn_remove{position:relative;margin-top:10px;margin-left:6px;padding-left:6px;height:40px;font-size:16px}
+.all_check_content .btn_remove::before{position:absolute;top:12px;left:0px;content:"|";font-size:12px;}
+

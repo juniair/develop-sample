@@ -1,0 +1,95 @@
+
+.app{order:2}
+.wrap_banner {}
+.wrap_banner .banner_item{}
+.wrap_banner .banner_item .banner_link{display:block;width:100%}
+.wrap_banner .banner_item img {width: 100%; height:135px}
+
+
+
+.test_member{margin:0 auto;} /* 나중에 제거 필요 */
+.wrap_member{width:100%;height:72px;background-color:#FFFFFF;font-size:0;letter-spacing:-1px}
+.cont_member{overflow:hidden;display:inline-block;width:50%;font-size:1rem;line-height:18px;vertical-align:top;}
+.cont_member:first-child:after{content:none}
+.cont_member .img_member{margin:12px 9px 0px 4px;width:52px;height:60px;}
+.cont_member .list_member{margin-top:6px}
+.cont_member .info_member{margin-top:18px}
+.cont_member .img_member, .cont_member .list_member dt{float:left}
+.cont_member .info_member, .cont_member .list_member, .cont_member .list_member dd{overflow:hidden;font-size: 16px;}
+.cont_member .list_member dd{color:#F4B619}
+.cont_member2{width:50%;text-align:center;font-size: 16px;}
+a.cont_member .cont_member2{color: inherit;}
+.cont_member3{width:100%;font-size: 16px;}
+.cont_member2 .tit_member{display:block;padding-top:18px;}
+.cont_member2 .txt_member{padding-top:6px;}
+.cont_member .num_member{display: inline-block;vertical-align: top;padding-right:2px;line-height:15px;}
+.num_member::before{
+    /* text-decoration: underline; */
+    content: attr(data-content);
+    border-bottom: 1px solid;
+}
+.cont_member2 a {color:inherit;}
+
+.cont_member3 .tit_member{float:left;margin:0 10px 0 0;line-height:18px;}
+.cont_member .list_tab{ overflow:hidden; width:120px; height:18px; border-radius:17.5px; -webkit-border-radius:17.5px; -moz-border-radius:17.5px; -ms-border-radius:17.5px; -o-border-radius:17.5px; }
+.cont_member .list_tab li{float:left;width:50%;background-color:#BBBDC0;text-align:center;font-weight:bold;color:#fff}
+.cont_member .list_tab li.on{background-color:#61a3dd}
+.cont_member .list_tab li > .link_tab {height:18px;vertical-align:bottom;font-size:12px;}
+.cont_member .list_discount{overflow:hidden;margin-top:4px;padding-top:4px;height:26px}
+.cont_member .list_discount li{float:left;width:20%;line-height:27px;font-size:12spx;color:#5D86A3}
+.cont_member .list_discount li div {display: inline-block;margin-left:-4px;}
+.cont_member .list_discount li dl {line-height: 1;}
+.cont_member .list_discount li dl dt.label {font-size:10px;color:#717171;font-weight: bold;}
+.cont_member .list_discount li dl dd {font-size: 12px;}
+.cont_member .list_discount li dl dd .data {font-size:16px;color:#5D86A3}
+.cont_member .role { float: left; margin: 13px 6px 13px 4px;}
+
+.test_member.wrap_type .cont_member{width:427px}
+.test_member.wrap_type .img_member{margin:9px 21px 0 114px}
+.test_member.wrap_type .cont_member3{width:673px}
+
+.txt_b {font-weight:bold}
+.screen_out{display:block;overflow:hidden;position:absolute;left:-9999px;width:1px;height:1px;font-size:0;line-height:0;text-indent:-9999px}
+
+.icon_expand{width: 96px; height: 24px;margin-right: 12px;font-size: 16px;border-radius: 35px; border: 1px solid transparent;}
+.icon_open{color: #ffffff;background-color: #4a4a4a; border-color: #4a4a4a;}
+.icon_closed{border-color: #cccccc;}
+.icon_open span,.icon_closed span{display: inline-block;vertical-align: middle;margin-bottom: 14px;height: 24px;font-weight:normal;}
+
+.calcular_section{display: block;border-bottom: 1px solid #cccccc;}
+.calcular_section .txt{display: table-cell;vertical-align: middle;font-size: 16px;color: #333333;font-weight: bold;}
+.calcular_section .txt:nth-child(1){margin-top: 15px;}
+.calcular_section .txt:nth-child(2){margin-top: 13px;}
+.calcular_section .txt strong{margin-right: 2px;font-size: 20px;}
+
+
+
+.main_menu_section {order: 3;padding-bottom: 53px;}
+.main_menu_list {display: flex;flex-wrap: wrap;height:calc(100vh - 291px);justify-content: space-between;}
+.main_menu_list li {display: flex;width: 50%;height: 33.33%;align-items: center;justify-self: center}
+.main_menu_list li a {
+	display: block;
+    width: 100%;
+    
+	/* height: 8.5vh; */
+	/* padding: 25px 0;
+	padding: 1.563rem 0; */
+	color: #fff;
+	font-size: 1.5em;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+
+@media (min-width:1024px) {
+    .wrap_banner .banner_item img {height:369px}
+}
+
+
+@media (min-width:768px) and (max-width:1023px) {
+    .wrap_banner .banner_item  img {height:287px}
+}
+
+@media (max-width:320px) {
+    .wrap_banner .banner_item img {height:115px}
+}

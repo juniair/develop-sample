@@ -1,0 +1,8 @@
+#header {position:fixed;width:100%;background:#fff;box-sizing:border-box;z-index:100;}
+#header.type1 {padding:6px 5px;height:53px;border-bottom: 1px solid #ccc;background-color: #fff;}
+
+#header.type2 {padding:0 9px;height:51px;border-bottom:1px solid #dde2ea;}
+#header.type2 .icon {position:absolute;margin:5px 0}
+#header.type2 .txt {display:block;margin:16px 0;text-align:center;font-style:normal;font-weight:bold;font-size:16px;color:#333;line-height:18px;}
+
+

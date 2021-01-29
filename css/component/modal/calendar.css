@@ -1,0 +1,42 @@
+
+.calendar-component{z-index:10;}
+/* .calendar-component .tab-component{position:fixed;top:0px;left:0px;width:100%;background-color:#ffffff;overflow-y: scroll;} */
+.calendar-component .tab-component .tabs{z-index:8;}
+.calendar-component .tab-component .tab-header.date.stay{width:100%}
+.calendar-component .tab-component .tabs-details{position:fixed;top:0px;left:0px;width:100%;background-color: #ffffff;z-index:7}
+
+.calendar_area{}
+.calendar_area .month{}
+.calendar_area .month .txt_month{display: block;margin-bottom: 5px;color: #666666;font-size: 20px;line-height: 40px;text-indent: 20px}
+.calendar_area .month > table{width:100%}
+.calendar_area .month > table > tbody{}
+.calendar_area .month > table > tbody > tr {height:54px}
+
+.calendar_area .month > table > tbody > tr > td.on {background-color: #2055c5 !important}
+.calendar_area .month > table > tbody > tr > td.on > span {color: #fff !important}
+.calendar_area .month > table > tbody > tr > td:first-child{color: #ff3333}
+.calendar_area .month > table > tbody > tr > td > span:first-child{display: block;position: relative;width: 100%;padding-top: 8px;font-size: 16px;box-sizing: border-box;}
+.calendar_area .month > table > tbody > tr > td.holiday span {color: #ff3333}
+.calendar_area .month > table > tbody > tr > td.disable {opacity: 0.5}
+.calendar_area .month > table > tbody > tr > td.today span {font-weight: bold}
+.calendar_area .month > table > tbody > tr > td.today span:after {display: block;position: absolute;content: 'TODAY';width: 100%;font-size: 12px;font-weight: normal;line-height: 20px}
+.calendar_area .month > table > tbody > tr > td.ftl {background-color: #f2f2f2}
+.calendar_area .month > table > tbody > tr > td:nth-child(7) {color: #3366ff}
+.calendar_area .month > table > tbody > tr > td {width: 14.28571428571429%;border: 1px solid transparent;text-align: center}
+
+.btn_footer{display: flex;position: fixed;bottom: 0;left: 0;width: 100%;border-top: 1px solid #cccccc;background-color: #ffffff;justify-content: center;z-index:8;}
+.btn_footer button{margin: 8px 0;}
+.btn_footer .btn_calendar_time{width: calc(100% - 64px);margin-right: 8px;border-radius: 3px;background-color: #2055c5;color: #ffffff;font-size: 18px;line-height: 40px}
+.btn_footer .btn_calendar_time_close{width: 40px;height: 40px;background: url(/images/s_images/calendar_close.gif) center no-repeat;background-size: contain;text-indent: -9999px}
+
+.time .warp_items{display: flex;justify-content: center;margin: 36px 0 32px 0}
+.time .warp_items .time-component{float: left;padding: 16px;background-color: #f2f2f2;}
+.time .warp_items .time-component.start {margin-right: 16px}
+.time .warp_items .time-component.end {}
+
+.time .warp_items .time-component .txt{display: block;font-size: 21px;font-weight: normal;line-height: 40px;text-align: center;}
+.time .warp_items .time-component .txt.date{display: block;font-style: normal;font-size: 12px;line-height: 20px;text-align: center}
+.time .warp_items .time-component select{padding: 0 32px;background-color: #ffffff;font-size: 18px;font-weight: bold;line-height: 40px;}
+.time .notice{margin: 0 8.533%}
+.time .notice .txt{color: #333;font-size: 14px}
+.time .notice .txt:before {content: '· '}

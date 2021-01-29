@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+
+.coupon_book_section {padding:14px;border-top:6px solid #eee;box-sizing:border-box;font-size:0}
+.order_price_infomation_section {padding:14px;border-top:6px solid #eee;box-sizing:border-box;font-size:0}
+.container .cnt_title {font-size:0;}
+.container .cnt_title .txt {display:inline-block;font-size:16px;color:#000;line-height:20px;}
+.container .cnt_title .txt.head {}
+.coupon_book_section .cnt_title .txt.head::after {display:inline-block;vertical-align:middle;content:'';margin:0 6px;padding:0 0;width:1px;height:20px;background:#000}
+.coupon_book_section .cnt_title .selected {font-size:14px;color:#f00;vertical-align:top;}
+.coupon_book_section .cnt_title .selected.non {color:#000;}
+.coupon_book_section .cnt_title .selected em {font-style:normal;}
+
+
+.coupon_book_items {width:100%;font-size:0}
+.coupon_book_items .coupon_book_item {width:100%;height:75px;box-sizing:border-box;font-size:0}
+.coupon_book_items .coupon_book_item + .coupon_book_item {margin-top:15px}
+.coupon_book_items .coupon_book_item .checker {display:inline-block;vertical-align:middle;padding:27.5px 0;width:76px;height:100%;box-sizing:border-box;text-align:center;font-size:0}
+.coupon_book_items .coupon_book_item .description {display:inline-block;vertical-align:top;width:calc(100% - 76px);height:100%;box-sizing:border-box;font-size:0}
+.coupon_book_items .coupon_book_item .description .txt {display:block;font-size:14px;color:#000;line-height:20px;}
+.coupon_book_items .coupon_book_item .description .txt.name {font-size:16px}
+.coupon_book_items .coupon_book_item .description .txt + .txt {margin-top:5px;}
+.price_info {display:block;clear: both;overflow: hidden;}
+.price_info .txt {display:block;font-size:14px;color:#000;line-height:30px;}
+.price_info .txt.label{float:left;}
+.price_info .txt.price{float:right;}
+.price_info.discount .txt.price {color:#f00}
+
+
+
+
+
+
+
+
+.checkbox_component {display:inline-block;box-sizing:border-box;cursor:pointer;}
+.checkbox_component .label {display:inline-block;margin-top:-1px;height:20px;font-size:14px;color:#333;line-height:20px;text-indent:-9999px;}
+.checkbox_component .input {display:inline-block;vertical-align:top}
+.checkbox_component .input input[type="checkbox"] {display:none;}
+.checkbox_component .input input[type="checkbox"] + .control {display:inline-block;padding:1px;width:20px;height:20px;border:1px solid #ccc;box-sizing:border-box;background:url(/images/s_images/check_f66.png) no-repeat top left / 19px 19px;background-position:-30px 0;text-indent:-9999px;}
+.checkbox_component .input input[type="checkbox"]:checked + .control {background-position:0 0;}

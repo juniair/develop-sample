@@ -1,0 +1,47 @@
+.container {position:relative;}
+.tab-headers {position:fixed;top:53px;width:100%;height:50px;font-size:0;z-index:10;}
+.tab-headers .tab-header {display:inline-block;width:50%;height:100%;border-bottom:1px solid #ccc;box-sizing:border-box;background:#f2f2f2}
+.tab-headers .tab-header.active {border-bottom-color:transparent;background:#fff}
+.tab-headers .tab-header + .tab-header {border-left:1px solid #ccc;}
+.tab-headers .tab-header > button {width:100%;height:100%;font-size:16px;font-weight:bold;color:#333}
+.tab-details {padding-top:50px;font-size:0;box-sizing:border-box;}
+.tab-details .tab-detail {display:none;background:#fff}
+.tab-details .tab-detail.active {display:block}
+.coupon_book_items {}
+.coupon_book_items .coupon_book_item {display:block;padding:15px 15px;width:100%;min-height:122px;border-bottom:6px solid #ccc;box-sizing:border-box;font-size:0}
+.coupon_book_item .symbol {
+    display:inline-block;
+    padding:19px 0;
+    width:110px;
+    height:86px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-sizing:border-box;
+    text-align:center;
+    font-size:0
+}
+.coupon_book_item.usable .symbol {background:#2055c5;}
+.coupon_book_item.used .symbol {background:#999;}
+.coupon_book_item .symbol .txt {display:block;font-weight:bold;font-size:18px;color:#fff;line-height:24px;}
+
+.coupon_book_item .description {display:inline-block;vertical-align:top;padding:0 12px;width:calc(100% - 110px);height:100%;box-sizing: border-box;font-size:0}
+
+.coupon_book_item .description .txt {font-size:14px;color:#333;line-height:20px;}
+.coupon_book_item .description .txt.benefits{margin-top:6px}
+.coupon_book_item .description .txt.reason {margin-right:4px;font-style:normal;color:#f00;}
+.coupon_book_item .description strong.txt {font-size:16px}
+
+
+.caution_content {margin-bottom:30px;width:100%;box-sizing:border-box;}
+.caution_content .txt {font-size:14px;color:#333}
+.caution_content .txt.title {font-size:16px}
+
+.caution_content .cautions {display:table;margin-top:8px;counter-reset: foo;}
+.caution_content .cautions .caution {display: table-row;font-size:14px;color:#333;line-height:20px;list-style:inherit;counter-increment: foo;}
+.caution_content .cautions .caution::before{content:counter(foo) ".\00a0";display:table-cell;text-align:right;}
+
+
+.txt_empty {margin-top:40px;text-align:center;font-size:14px;color:#333;line-height:20px;}

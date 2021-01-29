@@ -1,0 +1,5 @@
+.txt{font-size:14px;color:#333333;}
+.txt.title{font-size:16px;color:#333333;font-weight:bold;line-height:20px;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;}
+.txt.date{font-size:12px;color:#7c7c7c;line-height:16px}
+.txt.date.end{color:#e21b1b}
+.txt.empty_event{text-align:center;line-height:20px;}

@@ -1,0 +1,10 @@
+.tabs.cs{clear:both;overflow:hidden;padding-left:5px;padding-right:5px}
+.tabs.cs .tab-header{float:left;margin-left:5px;margin-right:5px;border-bottom: 2px solid transparent;height:38px;text-align:center}
+.tabs.cs .tab-header.notice{width:15.34246575%}
+.tabs.cs .tab-header.one_to_one{width:15.34246575%}
+.tabs.cs .tab-header.faq{width:24.3616438356164%}
+.tabs.cs .tab-header.review{width:15.34246575%}
+.tabs.cs .tab-header.terms{width:15.34246575%}
+.tabs.cs .tab-header.on{float:left;border-bottom-color:#ff6600;}
+.tabs.cs .tab-header .link{display:block;font-size:14px;color:#333333;line-height:38px}
+.tabs.cs .tab-header.on .link{display:block;color:#ff6600}

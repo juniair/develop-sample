@@ -1,0 +1,180 @@
+.modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	background-color: rgba(0,0,0,0.4);
+}
+.modal.on {display: block;}
+.modal_search_style {
+	display: none;
+	width: calc(100% - 10.6%);
+	margin: 5% 5.3%;
+	height: 90%;
+}
+.modal_search_style.on {display: block;}
+.modal_search_style .modal_search_header {
+	position: relative;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 0.5rem;
+	border-top-right-radius: 0.5rem;
+	border-bottom: 1px solid #cccccc;
+	border-bottom: 0.0625rem solid #cccccc;
+	background-color: #ffF;
+}
+.modal_search_style .letter_spacing_m002{letter-spacing:-2px}
+.modal_search_style .modal_search_header h4{
+	color: #000;
+	font-size: 15px;
+	font-size: 0.9375rem;
+	line-height: 50px;
+	line-height: 3.125rem;
+	text-indent: 20px;
+	text-indent: 1.25rem;
+}
+.modal_search_style .modal_search_header span.btn_close{
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	right: 0.625rem;
+	transform: translate(-50%,-50%);
+	width: 14px;
+	width: 0.875rem;
+	height: 14px;
+	height: 0.875rem;
+	background: url(/images/s_images/modal_search_style_close.gif) center no-repeat;
+	background-size: 14px;
+	background-size: 0.875rem;
+	text-indent: -9999px;
+}
+.modal_search_style .modal_search_body {
+	width: 100%;
+	max-height: calc(100% - 50px);
+	max-height: calc(100% - 3.125rem);
+	/* overflow-y: scroll; */
+	padding: 20px 15px;
+	/* padding: 1.25rem; */
+	border-bottom-left-radius: 8px;
+	border-bottom-left-radius: 0.5rem;
+	border-bottom-right-radius: 8px;
+	border-bottom-right-radius: 0.5rem;
+	background-color: #fff;
+	box-sizing: border-box;
+}
+.modal_search_style:not(#itemListSearchBuggy):not(#itemListSearchCoupon):not(#itemListSearchCoupon2) .modal_search_body form {height: 360px;overflow-y: scroll;overflow-x: hidden;}
+.btn_search_submit {
+	width: 100%;
+	margin-top: 10px;
+	margin-top: 0.625rem;
+	background-color: #2055c5;
+	color: #ffffff;
+	font-size: 15px;
+	font-size: 0.9375rem;
+	font-weight: bold;
+	line-height: 50px;
+	line-height: 3.125rem;
+}
+.modal_search_style .modal_search_body form  div{}
+.modal_search_style .modal_search_body form  div > label{
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	line-height: 14px;
+	line-height: 0.875rem;
+}
+.modal_search_style .modal_search_body > form  div:first-child > label{margin-top: 0;}
+.modal_search_style .modal_search_body > form  div > ul > li {margin-bottom: 8px;margin-bottom: 0.5rem;}
+/* select, input */
+.modal_search_style .modal_search_body > form > div.select_box {}
+.modal_search_style .modal_search_body > form  div.input_box {}
+.modal_search_style .modal_search_body > form > div.select_box, 
+.modal_search_style .modal_search_body > form  div.input_box {*zoom: 1;}
+.modal_search_style .modal_search_body > form > div.select_box:after, 
+.modal_search_style .modal_search_body > form  div.input_box:after {content: '';display: block;clear: both;}
+.modal_search_style .modal_search_body > form > div.select_box label, 
+.modal_search_style .modal_search_body > form  div.input_box label{
+	float: left;
+	width: 70px;
+	width: 4.375rem;
+	padding: 10px 0;
+	padding: 0.625rem 0;
+}
+.modal_search_style .modal_search_body > form > div.select_box ul, 
+.modal_search_style .modal_search_body > form  div.input_box ul{
+	display: flex;
+	justify-content: space-between;
+	float: left;
+	width: calc(100% - 70px);
+	width: calc(100% - 4.375rem);
+}
+.modal_search_style .modal_search_body > form > div.select_box ul li, 
+.modal_search_style .modal_search_body > form  div.input_box ul li{width: 100%;}
+.modal_search_style .modal_search_body > form > div.select_box ul li:not(:last-child), 
+.modal_search_style .modal_search_body > form  div.input_box ul li:not(:last-child){margin-right: 5px;margin-right: 0.3125rem;}
+.modal_search_style .modal_search_body > form > div.select_box select {
+	width: 100%;
+	padding: 10px;
+	padding: 0.625rem;
+	border-color: #ccc;	
+	background: url(/images/s_images/bg_select_payway.gif) center right no-repeat;	
+	color: #000;
+	font-size: 14px;
+	font-size: 0.875rem;
+}
+.modal_search_style .modal_search_body > form  div.input_box input{
+	width: calc(100% - 22px);
+	width: calc(100% - 1.375rem);
+	padding: 10px;
+	padding: 0.625rem;
+	color: #000;
+	border-color: #ccc;	
+	font-size: 14px;
+	font-size: 0.875rem; 
+}
+/* textareabox */
+.modal_search_style .modal_search_body .textarea_box label{margin-bottom: 13px;margin-bottom: 0.8125rem;}
+.modal_search_style .modal_search_body .textarea_box textarea{
+	width: 100%;
+	padding: 10px;
+	padding: 0.625rem;
+	border-color: #ccc;
+	box-sizing: border-box;
+}
+/* 주문내역 상세정보 취소 요청 */
+#orderListDetailCancle .modal_search_body .textarea_box textarea{height: 140px;height: 8.75rem;}
+/* checkbox*/
+.modal_search_style .modal_search_body > form  div.checkbox_box {}
+.modal_search_style .modal_search_body > form  div.checkbox_box > label {padding: 10px 0;padding: 0.625rem 0;}
+
+/* .modal_search_style 체크박스 [start] */
+.checkbox_list {margin-top: 4px;margin-top: 0.25rem;*zoom: 1;}
+.checkbox_list:after {content: '';display: block;clear: both;}
+.checkbox_list li {float: left;}
+.checkbox_list input[type="checkbox"],.checkbox_list input[type="radio"] {}
+.checkbox_list input[type="checkbox"] + label,
+.checkbox_list input[type="radio"] + label {
+	display: inline-block;
+	margin-right: 10px;
+	margin-right: 0.625rem;
+	padding: 0 10px;
+	padding: 0 0.625rem;
+	border: 1px solid #ccc;
+	border-radius: 35px;
+	border-radius: 2.188rem;
+	color: #333;
+	font-size: 12px;
+	font-size: 0.75rem;
+	font-weight: bold;
+	line-height: 35px;
+	line-height: 2.188rem;
+}
+.checkbox_list input[type="checkbox"]:checked + label{
+	border-color: #2055c5;
+	background-color: #2055c5;
+	color: #fff;
+}

@@ -1,0 +1,20 @@
+.favorite_content,
+.around_map_section .around_map_content{width:100%;}
+.favorite_content{height:40px}
+.around_map_section .around_map_content{height:50vh;display:none}
+.around_map_section button,
+.favorite_content button{padding-left:6px;font-size:14px;text-align:left}
+.favorite_content button .icon_favorite{margin-top:3px}
+.icon_arrow{top:0px;right:6px}
+.icon_arrow.down{transform: rotate(0deg);transition: 0.2s}
+.icon_arrow.up{transform:rotate(180deg);transition: 0.2s}
+
+.around_overlay_modal{display:none;position:fixed;top:0;left:0;width:100%;height:100vh;z-index:100;}
+.around_overlay_modal .around_overlay{height:inherit;background-color: rgba(0,0,0,0.2)}
+.around_overlay_modal .around_overlay .content{position: absolute;top: 50%;left: 50%;background-color: #ffffff;width:300px;height:136px;transform: translate(-50%, -50%);}
+.around_overlay_modal .around_overlay .content .txt{font-size:16px;color:#333333;text-align:center;line-height:20px;}
+.around_overlay_modal .around_overlay .content .btn_content{width:100%;height:40px;}
+.around_overlay_modal .around_overlay .content .btn_content .btn_close{float:right;margin-top:4px;margin-right:4px;margin-bottom:2px;margin-left:4px;width:24px;height:24px;text-align:center;}
+.around_overlay_modal .around_overlay .content .btn_group_content{border-top:1px solid #eeeeee;height:59px;text-align:center;}
+.around_overlay_modal .around_overlay .content .btn_group_content .btn_around_favorite{margin-top:10px;margin-bottom:10px;border:1px solid #cccccc;width:128px;height:38px;font-size:16px;color:#666666}
+.around_overlay_modal .around_overlay .content .btn_group_content .btn_product_link{display:inline-block;margin-top:10px;margin-bottom:10px;border:1px solid #6d95ec;background:#6d95ec;width:128px;height:38px;font-size:16px;color:#ffffff;line-height:38px}

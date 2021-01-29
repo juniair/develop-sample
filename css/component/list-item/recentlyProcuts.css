@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/* 최근 본 상품이 비어 있는 UI */
+.recently_empty_container {padding-top:40px;width:100%;text-align:center;font-size:0}
+.recently_empty_container .txt {display:inline-block;font-size:14px;color:#333;line-height:20px}
+/* 최근 본 상품이 비어 있는 UI end */
+
+
+.recently_container {width:100%;font-size:0}
+.recently_container .recently_items {padding:0 14px}
+.recently_container .recently_items .recently_item {padding: 18px 0;width:100%;height:119px;border-bottom:1px solid #ccc;box-sizing:border-box}
+.recently_container .recently_items .recently_item .link {display:block;width:100%;height:100%}
+.recently_container .recently_items .recently_item .link .thumb {display:inline-block;width:82px;height:82px;border-radius:5px;background-color:#ccc}
+.recently_container .recently_items .recently_item .link .txt {display:inline-block;margin-left:10px;width:calc(100% - 92px);font-weight:bold;font-size:14px;color:#333;line-height:20px}
+
+
+
+/* 메인 화면 최근 본 상품 UI */
+.product_container.recently {display:block;width:100%;height:250px}
+.product_container.recently .product_header{border-bottom-color:transparent;}
+.product_container.recently .recntly_items{padding-bottom:10px;padding-left:5px;height:162px;box-sizing:border-box;font-size:0}
+.product_container.recently .recntly_items .recntly_item {width:164px;height:100%}
+.product_container.recently .recntly_items .recntly_item .recntly_container{display:block;width:100%;}
+.product_container.recently .recntly_items .recntly_item .thumb {
+    display:block;
+    width:100%;
+    height:150px;
+    border-radius:2.5px;
+    -webkit-border-radius:2.5px;
+    -moz-border-radius:2.5px;
+    -ms-border-radius:2.5px;
+    -o-border-radius:2.5px;
+    box-sizing: border-box;
+}
+.product_container.recently .recntly_items .recntly_item .txt {
+    display:block;
+    overflow:hidden;
+    padding:0 10px;
+    width:100%;
+    height:32px;
+    box-sizing: border-box;
+    text-align:center;
+    font-size:14px;
+    color:#333;
+	text-overflow: ellipsis;
+    word-wrap:break-word;
+    line-height: 30px;}
+/* 메인 화면 최근 본 상품 UI [end] */

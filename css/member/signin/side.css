@@ -1,0 +1,44 @@
+.side_menu_imgslide{ 
+        position:absolute;
+        width : calc(100% - 28px);
+        height: 24.88vh;
+        bottom: 75px;
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+    .swiper-slide {
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;      
+      }
+      .swiper-slide-thumbnail{
+          width: 100%;
+          height: 100%; 
+      }
+     
+    .imgslide_text{
+        width: 30px;
+        height: 16px;
+        right: 24px;
+        bottom: 10px;
+        left: unset;
+        font-family: "맑은고딕";
+        color: #fff;
+        font-size: 11px;
+        text-align: center;
+        font-weight: bold;
+        line-height: 16px;
+        background-image: url(/images/member/bg.png);        
+    } 
+    
+

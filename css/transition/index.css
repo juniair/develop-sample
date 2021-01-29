@@ -1,0 +1,10 @@
+
+.accordion-enter.stay{bottom:-240px;}
+.accordion-enter:not(.stay){bottom:-130px;}
+
+.accordion-enter-to{z-index:3;}
+
+.accordion-enter-active{transition:bottom .2s;overflow: hidden;}
+
+
+.expand-enter-active, .expand-leave-active{transition:height .3s;overflow: hidden;}

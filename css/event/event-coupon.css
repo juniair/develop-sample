@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+.event-coupon-container {font-size:0;text-align:center;}
+.event-coupon-container .btn_coupon__donwload {vertical-align:top;width:96px;height:22px;margin:11.5px 0;box-sizing:border-box;background:url(/images/ico/button/icon_coupon_download_x1.png) 0 0 no-repeat;text-indent:-9999px;}
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+    .event-coupon-container .btn_coupon__donwload {background:url(/images/ico/button/icon_coupon_download_x2.png) no-repeat top left / 96px 22px}
+}

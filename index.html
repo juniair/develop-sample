@@ -1,164 +1,423 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./accept/css/index.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
-    <script src="./accept/js/index.js"></script>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- 자동 전화 걸기 방지 -->
+    <meta name="format-detection" content="telephone=no">
+
+    <title>쿠주선 멤버스 - 여행바구니</title>
+
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="stylesheet" href="/css/icon/index.css">
+    <link rel="stylesheet" href="/css/icon/material/index.css">
+    <link rel="stylesheet" href="/css/common/color.css">
+    <link rel="stylesheet" href="/css/cart/index.css">
+
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/LunarCalendar.js"></script>
+
+    <script src="/js/util/index.js"></script>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script src="/js/vue/vue.min.js"></script>
+    <script src="https://unpkg.com/vue-lazyload/vue-lazyload.js"></script>
+    <script src="/js/vue/plugin.js"></script>
+    <link defer="" rel="stylesheet" href="/css/swiper/swiper-bundle.min.css">
+    <script defer="" src="/js/swiper/swiper-bundle.min.js"></script>
 
 </head>
 
 <body>
-    <div id="navBody">
-        <img class="wp_00" src="./accept/img/01_모바일_전체메뉴_상단.jpg">
-        <div>
-            <h6 id="menuTitle">쿠주선 서비스</h6>
-            <ul class="menu_items">
-                <li class="menu_item">
-                    <a href="#">
-                        <i class="icon_category_link icon_category_air">아이콘</i>
-                        <strong class="txt">항공</strong>
-                    </a>
-                    <ul class="category_items">
-                        <li class="category_item"><a href="#">실시간 항공</a></li>
-                    </ul>
-                </li>
-                <li class="menu_item">
-                    <a href="#">
-                        <i class="icon_category_link icon_category_stay">아이콘</i>
-                        <strong class="txt">숙박</strong>
-                    </a>
-                    <ul class="category_items">
-                        <li class="category_item"><a href="#">제주 실시간 숙박</a></li>
-                        <li class="category_item"><a href="#">비실시간 숙박</a></li>
-                    </ul>
-                </li>
-                <li class="menu_item">
-                    <a href="#">
-                        <i class="icon_category_link icon_category_rentcar">아이콘</i>
-                        <strong class="txt">제주 실시간 렌터카</strong>
-                    </a>
-                    <ul class="category_items">
-                        <li class="category_item"><a href="#">완전/고급자차</a></li>
-                        <li class="category_item"><a href="#">자차보상 무제한</a></li>
-                        <li class="category_item"><a href="#">친환경 전기차</a></li>
-                        <li class="category_item"><a href="#">19~20년 신차</a></li>
-                        <li class="category_item"><a href="#">야간배차무료</a></li>
-                        <li class="category_item"><a href="#">15인승 승합</a></li>
-                        <li class="category_item"><a href="#">만21세 대여가능</a></li>
-                    </ul>
-                </li>
-                <li class="menu_item">
-                    <a href="#">
-                        <i class="icon_category_link icon_category_tour">아이콘</i>
-                        <strong class="txt">티켓(여행)</strong>
-                    </a>
-                    <ul class="category_items">
-                        <li class="category_item"><a href="#">테마파크</a></li>
-                        <li class="category_item"><a href="#">수상·레져</a></li>
-                        <li class="category_item"><a href="#">체험거리</a></li>
-                        <li class="category_item"><a href="#">공연·전시</a></li>
-                        <li class="category_item"><a href="#">실내관광지</a></li>
-                        <li class="category_item"><a href="#">유모차&카시트</a></li>
-                        <li class="category_item"><a href="#">내륙관광지티켓</a></li>
-                    </ul>
-                </li>
-                <li class="menu_item">
-                    <a href="#">
-                        <i class="icon_category_link icon_category_food">아이콘</i>
-                        <strong class="txt">뷔페/맛집</strong>
-                    </a>
-                    <ul class="category_items">
-                        <li class="category_item"><a href="#">뷔페·맛집</a></li>
-                    </ul>
-                </li>
-                <li class="menu_item">
-                    <a href="#">
-                        <i class="icon_category_link icon_category_buggy">아이콘</i>
-                        <strong class="txt">여행/편의</strong>
-                    </a>
-                    <ul class="category_items">
-                        <li class="category_item"><a href="#">유모차·카시트</a></li>
-                        <li class="category_item"><a href="#">발렛파킹</a></li>
-                    </ul>
-                </li>
-                <li class="menu_item">
-                    <a href="#">
-                        <i class="icon_category_link icon_category_insure">아이콘</i>
-                        <strong class="txt">여행자보험</strong>
-                    </a>
-                    <ul class="category_items">
-                        <li class="category_item"><a href="#">여행자보험</a></li>
-                    </ul>
-                </li>
-                <li class="menu_item">
-                    <a href="#">
-                        <i class="icon_category_link icon_category_event">아이콘</i>
-                        <strong class="txt">이벤트</strong>
-                    </a>
-                    <ul class="category_items">
-                        <li class="category_item"><a href="#">이벤트</a></li>
-                    </ul>
-                </li>
-                <li class="menu_item">
-                    <a href="#">
-                        <i class="icon_category_link icon_category_cart">아이콘</i>
-                        <strong class="txt">여행바구니</strong>
-                    </a>
-                    <ul class="category_items">
-                        <li class="category_item"><a href="#">여행바구니</a></li>
-                    </ul>
-                </li>
-                <li class="menu_item">
-                    <a href="#">
-                        <i class="icon_category_link icon_category_mypage">아이콘</i>
-                        <strong class="txt">마이페이지</strong>
-                    </a>
-                    <ul class="category_items">
-                        <li class="category_item"><a href="#">멤버정보관리</a></li>
-                        <li class="category_item"><a href="#">찜 목록</a></li>
-                        <li class="category_item"><a href="#">주변맵찜</a></li>
-                        <li class="category_item"><a href="#">주문관리</a></li>
-                        <li class="category_item"><a href="#">캐시리워드</a></li>
-                        <li class="category_item"><a href="#">내가 쓴 리뷰·문의</a></li>
-                    </ul>
-                </li>
-                <li class="menu_item">
-                    <a href="#">
-                        <i class="icon_category_link icon_category_customer">아이콘</i>
-                        <strong class="txt">고객센터</strong>
-                    </a>
-                    <ul class="category_items">
-                        <li class="category_item"><a href="#">공지사항</a></li>
-                        <li class="category_item"><a href="#">1:1문의</a></li>
-                        <li class="category_item"><a href="#">자주묻는 질문</a></li>
-                        <li class="category_item"><a href="#">여행리뷰</a></li>
-                        <li class="category_item"><a href="#">이용약관</a></li>
-                    </ul>
-                </li>
-                <li class="menu_item">
-                    <a href="#">
-                        <i class="icon_category_link icon_category_how">아이콘</i>
-                        <strong class="txt">쿠주선 소개</strong>
-                    </a>
-                    <ul class="category_items">
-                        <li class="category_item"><a href="#">쿠주선이란?</a></li>
-                        <li class="category_item"><a href="#">주변MAP</a></li>
-                        <li class="category_item"><a href="#">멤버스혜택</a></li>
-                        <li class="category_item"><a href="#">신규멤버 이벤트</a></li>
-                        <li class="category_item"><a href="#">멤버스 등급안내</a></li>
-                        <li class="category_item"><a href="#">웰컴쿠폰</a></li>
-                        <li class="category_item"><a href="#">캐시리워드</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <img class="wp_00" src="./accept/img/02_모바일_전체메뉴_하단.jpg">
+    <div id="wrap">
+        <header class="header_02">
+            <div class="header_type_2"><a onclick="location.href='/'" class="prev"><span>이전</span></a> <em>여행바구니</em> <a
+                    href="/" class="home"><span>홈</span></a></div>
+        </header>
+        <!---->
+        <section class="cart_selecting_section" style="padding-top: 53px; padding-bottom: 105px;">
+            <div class="cart_selecting_all pl014 pr014">
+                <div class="chk_container fl"><input type="checkbox" name="cart_item" id="cart_item_all"> <label
+                        for="cart_item_all" class="txt_title">전체 선택</label></div> <button type="button"
+                    class="btn_delete" style="display: none;">상품삭제</button>
+                    <em>해당 영역 작성해주세요.</em>
+            </div>
+            <div class="cart_container mt046 pb105">
+                <ul class="cart_list">
+                    <li class="cart_list_item">
+                        <div class="item_header ml014 mr010">
+                            <div class="chk_container fl"><input type="checkbox" name="cart_item" id="cart_item_0"
+                                    value="[object Object]"> <label for="cart_item_0"><b class="txt_title">제주
+                                        곱은달감귤체험[개발팀테스트상품]</b></label></div> <button type="button"
+                                class="btn_delete fl"><i class="material-icons">clear</i></button>
+                        </div>
+                        <div class="item_content Po_r ml014 mr014"><img class="thumb Po_a lazy-img-fadein"
+                                data-src="http://coupontree.co.kr/document/Product/coupon/04[302].jpg"
+                                src="http://coupontree.co.kr/document/Product/coupon/04[302].jpg" lazy="loaded">
+                            <!---->
+                            <!---->
+                            <div class="description Po_a">
+                                <p class="txt_name">제주 곱은달감귤체험</p>
+                                <p class="item_option"><span>성인 : 3매</span> <span>청소년 : 2매</span> <span>소아 : 1매</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item_price_info Po_r mt026 mb006 pl014 pr014 h_046">
+                            <div class="price Po_a">
+                                <dl class="origin">
+                                    <dt class="fl txt_r">정상가</dt>
+                                    <dd class="fr ml005"><del>30,000<small>원</small></del></dd>
+                                </dl>
+                                <dl class="online">
+                                    <dt class="fl txt_r">온라인판매가</dt>
+                                    <dd class="fr ml005"><del>21,000<small>원</small></del></dd>
+                                </dl>
+                                <dl class="members bold">
+                                    <dt class="fl txt_r">쿠주선멤버가</dt>
+                                    <dd class="fr ml005">
+                                        19,470<small>원</small></dd>
+                                </dl>
+                            </div>
+                            <div class="rate icon_discount Po_a font_black_000 fs_14"><span class="mt002">30<small
+                                        class="fs_08">%</small></span> <span class="mt006 bold">35<small
+                                        class="fs_08">%</small></span></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!---->
+        </section>
+        <footer class="footer">
+            <div class="g_btn_order menu01" style="font-weight: bold;"><a href="/checkout/?arrSeq=3604" class="">총
+                    <span>1개</span> <span>19,470원</span> 주문하기</a></div>
+            <div class="navbar">
+                <ul class="navbar_list">
+                    <li><button class="btn btn_more_all btn_more_all_js"><i class="icon_navi icon_all">전체보기</i></button>
+                    </li>
+                    <li class="home"><a href="/" class="link"><i class="icon_navi icon_home">홈</i></a></li>
+                    <li class="location"><a href="/location/find" class="link"><i
+                                class="icon_navi icon_location"></i></a></li>
+                    <li class="cart on"><a href="/cart" class="link"><i class="icon_navi icon_cart on">장바구니</i> <em
+                                class="badge">1</em></a></li>
+                    <li class="logout"><a href="/mypage" class="link"><i class="icon_navi icon_mypage "></i></a></li>
+                </ul>
+            </div>
+            <div class="all_menu_layer">
+                <div class="header">
+                    <p class="txt title">전체 메뉴</p> <button class="btn_all_menu_close btn_all_menu_close_js"><i
+                            class="icon_all_menu_close">닫기</i></button>
+                </div>
+                <div class="container">
+                    <div class="category_container"><strong class="txt no">사이트 카테고리</strong>
+                        <ul class="category_items">
+                            <li class="category_item"><a href="/air" class="category_link"><i
+                                        class="icon_category_link icon_category_air">아이콘</i> <span
+                                        class="txt">항공</span></a></li>
+                            <li class="category_item"><a href="/stay" class="category_link"><i
+                                        class="icon_category_link icon_category_stay">아이콘</i> <span
+                                        class="txt">실시간숙박</span></a></li>
+                            <li class="category_item"><a href="/rentcar" class="category_link"><i
+                                        class="icon_category_link icon_category_rentcar">아이콘</i> <span
+                                        class="txt">실시간렌터카</span></a></li>
+                            <li class="category_item"><a href="/coupon" class="category_link"><i
+                                        class="icon_category_link icon_category_tour">아이콘</i> <span
+                                        class="txt">티켓(여행)</span></a></li>
+                            <li class="category_item"><a href="/food" class="category_link"><i
+                                        class="icon_category_link icon_category_food">아이콘</i> <span
+                                        class="txt">뷔페/맛집</span></a></li>
+                            <li class="category_item"><a href="/buggy" class="category_link"><i
+                                        class="icon_category_link icon_category_buggy">아이콘</i> <span
+                                        class="txt">여행/편의</span></a></li>
+                            <li class="category_item"><a href="/event" class="category_link"><i
+                                        class="icon_category_link icon_category_event">아이콘</i> <span
+                                        class="txt">이벤트</span></a></li>
+                            <li class="category_item"><a href="https://tree.toursafe.co.kr/" target="_blank"
+                                    class="category_link"><i class="icon_category_link icon_category_insure">아이콘</i>
+                                    <span class="txt">여행자보험</span></a></li>
+                            <li class="category_item  di_no"><a href="/location/find" class="category_link"><i
+                                        class="icon_category_link icon_category_location">아이콘</i> <span class="txt">내
+                                        주변</span></a></li>
+                            <li class="category_item  di_no"><a href="/mypage/favorite" class="category_link"><i
+                                        class="icon_category_link icon_category_favorite">아이콘</i> <span
+                                        class="txt">찜목록</span></a></li>
+                            <li class="category_item"><a href="/cart" class="category_link"><i
+                                        class="icon_category_link icon_category_cart">아이콘</i> <span
+                                        class="txt">여행바구니</span></a></li>
+                            <li class="category_item"><a href="/mypage" class="category_link"><i
+                                        class="icon_category_link icon_category_mypage">아이콘</i> <span
+                                        class="txt">마이페이지</span></a></li>
+                            <li class="category_item di_no"><a href="javascript:void(0)" class="category_link"><i
+                                        class="icon_category_link icon_category_around">아이콘</i> <span
+                                        class="txt">주변MAP</span></a></li>
+                            <li class="category_item"><a href="/customer" class="category_link"><i
+                                        class="icon_category_link icon_category_customer">아이콘</i> <span
+                                        class="txt">고객센터</span></a></li>
+                            <li class="category_item"><a href="/introduce" class="category_link"><i
+                                        class="icon_category_link icon_category_how">아이콘</i> <span
+                                        class="txt">쿠주선이란</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="all_menu event_container swiper-container"><strong class="txt no">이벤트 목록</strong>
+                        <ul class="event-items swiper-wrapper">
+                            <li class="event-item swiper-slide"><a href="/event/detail?eventCode=PoBsHXBsHXBsHPj2CoSg"
+                                    class="item_content"><img
+                                        src="http://coupontree.co.kr/document/Product/main//쿠주선멤버스등급_썸네일.jpg"
+                                        alt="쿠주선 멤버스 등급" class="thumbnail"></a></li>
+                            <li class="event-item swiper-slide"><a href="/event/detail?eventCode=PoBsHXBsHXBsHPj2CoNg"
+                                    class="item_content"><img
+                                        src="http://coupontree.co.kr/document/Product/main//신규멤버이벤트_썸네일_pc[1].jpg"
+                                        alt="신규멤버 이벤트" class="thumbnail"></a></li>
+                            <li class="event-item swiper-slide"><a href="/event/detail?eventCode=PoBsHXBsHXBsHPj2CXjg"
+                                    class="item_content"><img
+                                        src="http://coupontree.co.kr/document/Product/main//배너_주변맵.jpg" alt="주변맵"
+                                        class="thumbnail"></a></li>
+                            <li class="event-item swiper-slide"><a href="/event/detail?eventCode=PoBsHXBsHXBsHPj2CXgg"
+                                    class="item_content"><img
+                                        src="http://coupontree.co.kr/document/Product/main//배너_멤버가.jpg" alt="쿠주선멤버가"
+                                        class="thumbnail"></a></li>
+                            <li class="event-item swiper-slide"><a href="/event/detail?eventCode=PoBsHXBsHXBsHPj2CXeg"
+                                    class="item_content"><img
+                                        src="http://coupontree.co.kr/document/Product/main//배너_웰컴.jpg" alt="웰컴쿠폰"
+                                        class="thumbnail"></a></li>
+                            <li class="event-item swiper-slide"><a href="/event/detail?eventCode=PoBsHXBsHXBsHPj2CXAg"
+                                    class="item_content"><img
+                                        src="http://coupontree.co.kr/document/Product/main//배너_친구.jpg" alt="친구초대"
+                                        class="thumbnail"></a></li>
+                            <li class="event-item swiper-slide"><a href="/event/detail?eventCode=PoBsHXBsHXBsHPj2CXIg"
+                                    class="item_content"><img
+                                        src="http://coupontree.co.kr/document/Product/main//배너_제주겨울여행.jpg" alt="제주겨울여행"
+                                        class="thumbnail"></a></li>
+                            <li class="event-item swiper-slide"><a href="/event/detail?eventCode=PoBsHXBsHXBsHPH4HPjg"
+                                    class="item_content"><img
+                                        src="http://coupontree.co.kr/document/Product/main//배너_중문면세[8].jpg"
+                                        alt="중문면세점 이벤트" class="thumbnail"></a></li>
+                        </ul> <span class="event_pagenation swiper-pagination"></span>
+                    </div>
+                    <div class="all_menu_container">
+                        <div class="all_menu_coujuseon"><span>쿠주선 서비스</span></div>
+                        <div class="all_menu_container_list">
+                            <ul>
+                                <li class="all_menu_container_title"><a href="/air"><i
+                                            class="icon_allmemucategory_bottom icon_allmemucategory_air">아이콘</i>
+                                        <span>항공</span></a></li>
+                                <li class="all_menu_container_menu_list"><span><a href="/air">실시간 항공</a></span></li>
+                            </ul>
+                        </div>
+                        <div class="all_menu_container_list">
+                            <ul>
+                                <li class="all_menu_container_title"><a href="/stay"><i
+                                            class="icon_allmemucategory_bottom icon_allmemucategory_stay">아이콘</i>
+                                        <span>숙박</span></a></li>
+                                <li class="all_menu_container_list_chart">
+                                    <ul>
+                                        <li><span><a href="/stay">제주 실시간 숙박</a></span></li>
+                                        <li><span><a href="/stay">비실시간 숙박</a></span></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="all_menu_container_list">
+                            <ul>
+                                <li class="all_menu_container_title"><a href="/rentcar"><i
+                                            class="icon_allmemucategory_bottom icon_allmemucategory_rentcar">아이콘</i>
+                                        <span>제주 실시간 렌터카</span></a></li>
+                                <li class="all_menu_container_list_chart">
+                                    <ul>
+                                        <li><span><a href="/rentcar?hashtag=001">완전/고급자차</a></span></li>
+                                        <li><span><a href="/rentcar?hashtag=002">자차보상 무제한</a></span></li>
+                                    </ul>
+                                    <ul>
+                                        <li><span><a href="/rentcar?hashtag=003">친환경 전기차</a></span></li>
+                                        <li><span><a href="/rentcar?hashtag=004">19~20년 신차</a></span></li>
+                                    </ul>
+                                    <ul>
+                                        <li><span><a href="/rentcar?hashtag=005">야간배차무료</a></span></li>
+                                        <li><span><a href="/rentcar?hashtag=006&amp;hashTagClicked=1">15인승 승합</a></span>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li><span><a href="/rentcar?hashtag=007">만21세 대여가능</a></span></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="all_menu_container_list">
+                            <ul>
+                                <li class="all_menu_container_title"><a href="/coupon"><i
+                                            class="icon_allmemucategory_bottom icon_allmemucategory_tour">아이콘</i>
+                                        <span>티켓(여행)</span></a></li>
+                                <li class="all_menu_container_list_chart">
+                                    <ul>
+                                        <li><span><a href="/coupon/?PSHP4=25">테마파크</a></span></li>
+                                        <li><span><a href="/coupon/?PSHP2=&amp;PSUB=&amp;PSHP3=&amp;PSHP4=1&amp;PSHK=">수상
+                                                    · 레져</a></span></li>
+                                    </ul>
+                                    <ul>
+                                        <li><span><a
+                                                    href="/coupon/?PSHP2=&amp;PSUB=&amp;PSHP3=&amp;PSHP4=7&amp;PSHK=">체험거리</a></span>
+                                        </li>
+                                        <li><span><a
+                                                    href="/coupon/?PSHP4=13&amp;PBANNER=&amp;PSUB=&amp;PSHK=&amp;PSHP3=&amp;PSHP2=">공연
+                                                    · 전시</a></span></li>
+                                    </ul>
+                                    <ul>
+                                        <li><span><a
+                                                    href="/coupon/?PSHP2=&amp;PSUB=&amp;PSHP3=&amp;PSHP4=29&amp;PSHK=">실내관광지</a></span>
+                                        </li>
+                                        <li><span><a
+                                                    href="/coupon/?PSHP2=&amp;PSUB=&amp;PSHP3=&amp;PSHP4=31&amp;PSHK=">유모차&amp;카시트</a></span>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li><span><a href="/coupon">내륙관광지티켓</a></span></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="all_menu_container_list">
+                            <ul>
+                                <li class="all_menu_container_title"><a href="/food"><i
+                                            class="icon_allmemucategory_bottom icon_allmemucategory_food">아이콘</i>
+                                        <span>뷔페/맛집</span></a></li>
+                                <li class="all_menu_container_menu_list"><span><a href="/food">뷔페 · 맛집</a></span></li>
+                            </ul>
+                        </div>
+                        <div class="all_menu_container_list">
+                            <ul>
+                                <li class="all_menu_container_title"><a href="/buggy"><i
+                                            class="icon_allmemucategory_bottom icon_allmemucategory_buggy">아이콘</i>
+                                        <span>여행/편의<span></span></span></a></li>
+                                <li class="all_menu_container_list_chart">
+                                    <ul>
+                                        <li><span><a href="/buggy/?PSHP3=유모차">유모차 · 카시트</a></span></li>
+                                        <li><span><a href="/buggy/?PSHP3=발렛">발렛파킹</a></span></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="all_menu_container_list">
+                            <ul>
+                                <li class="all_menu_container_title"><a href="https://tree.toursafe.co.kr/"
+                                        target="_blank"><i
+                                            class="icon_allmemucategory_bottom icon_allmemucategory_insure">아이콘</i>
+                                        <span>여행자보험</span></a></li>
+                                <li class="all_menu_container_menu_list"><span><a href="https://tree.toursafe.co.kr/"
+                                            target="_blank">여행자보험</a></span></li>
+                            </ul>
+                        </div>
+                        <div class="all_menu_container_list">
+                            <ul>
+                                <li class="all_menu_container_title"><a href="/event"><i
+                                            class="icon_allmemucategory_bottom icon_allmemucategory_event">아이콘</i>
+                                        <span>이벤트</span></a></li>
+                                <li class="all_menu_container_menu_list"><span><a href="/event">이벤트</a></span></li>
+                            </ul>
+                        </div>
+                        <div class="all_menu_container_list">
+                            <ul>
+                                <li class="all_menu_container_title"><a href="/cart"><i
+                                            class="icon_allmemucategory_bottom icon_allmemucategory_cart">아이콘</i>
+                                        <span>여행바구니</span></a></li>
+                                <li class="all_menu_container_menu_list"><span><a href="/cart">여행바구니</a></span></li>
+                            </ul>
+                        </div>
+                        <div class="all_menu_container_list">
+                            <ul>
+                                <li class="all_menu_container_title"><a href="/mypage"><i
+                                            class="icon_allmemucategory_bottom icon_allmemucategory_mypage">아이콘</i>
+                                        <span>마이페이지</span></a></li>
+                                <li class="all_menu_container_list_chart">
+                                    <ul>
+                                        <li><span><a href="/mypage/myInfoUpdateCheck.asp">멤버정보관리</a></span></li>
+                                        <li><span><a href="/mypage/favorite/">찜 목록</a></span></li>
+                                    </ul>
+                                    <ul>
+                                        <li><span><a href="/mypage">주변맵찜</a></span></li>
+                                        <li><span><a href="/mypage/order-info/">주문관리</a></span></li>
+                                    </ul>
+                                    <ul>
+                                        <li><span><a href="/mypage/profitsManage.asp">캐시리워드</a></span></li>
+                                        <li><span><a href="/mypage/inquiryAndReview.asp">내가 쓴 리뷰 · 문의</a></span></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="all_menu_container_list">
+                            <ul>
+                                <li class="all_menu_container_title"><a href="/customer"><i
+                                            class="icon_allmemucategory_bottom icon_allmemucategory_customer">아이콘</i>
+                                        <span>고객센터</span></a></li>
+                                <li class="all_menu_container_list_chart">
+                                    <ul>
+                                        <li><span><a href="/customer">공지사항</a></span></li>
+                                        <li><span><a href="/customer/oneInquiry">1:1 문의</a></span></li>
+                                    </ul>
+                                    <ul>
+                                        <li><span><a href="/customer/faq">자주묻는질문</a></span></li>
+                                        <li><span><a href="/customer/review">여행리뷰</a></span></li>
+                                    </ul>
+                                    <ul>
+                                        <li><span><a href="/customer/terms">이용약관</a></span></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="all_menu_container_list">
+                            <ul>
+                                <li class="all_menu_container_title"><a href="/introduce"><i
+                                            class="icon_allmemucategory_bottom icon_allmemucategory_introduce">아이콘</i>
+                                        <span>쿠주선소개</span></a></li>
+                                <li class="all_menu_container_list_chart">
+                                    <ul>
+                                        <li><span><a href="/introduce">쿠주선이란?</a></span></li>
+                                        <li><span><a href="/introduce/?active=service">주변MAP</a></span></li>
+                                    </ul>
+                                </li>
+                                <li class="all_menu_container_list_chart">
+                                    <ul>
+                                        <li><span><a href="/introduce/?active=benefits">멤버스혜택</a></span></li>
+                                        <li><span><a href="/event/detail/?eventCode=PoBsHXBsHXBsHPj2CoNg">신규멤버
+                                                    이벤트</a></span></li>
+                                    </ul>
+                                    <ul>
+                                        <li><span><a href="/event/detail/?eventCode=PoBsHXBsHXBsHPj2CoSg">멤버스
+                                                    등급안내</a></span></li>
+                                        <li><span><a
+                                                    href="/event/detail/?eventCode=PoBsHXBsHXBsHPj2CXeg">웰컴쿠폰</a></span>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li><span><a
+                                                    href="/event/detail/?eventCode=PoBsHXBsHXBsHPj2CXAg">캐시리워드</a></span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="notice_container">
+                        <div class="notice_header"><strong class="txt name">공지사항</strong> <a href="/customer"
+                                class="txt link"><span>더보기</span><i class="icon icon_all_notice_more">아이콘</i></a></div>
+                        <ul class="notice_items">
+                            <li class="notice_item"><a href="/customer/notice/detail?seq=1681"
+                                    class="notice_item_link"><span class="txt title">쿠주선 멤버스 오픈 이벤트</span> <span
+                                        class="txt date">2021.01.18</span></a></li>
+                            <li class="notice_item"><a href="/customer/notice/detail?seq=1680"
+                                    class="notice_item_link"><span class="txt title">쿠주선 멤버스가 오픈하였습니다.</span> <span
+                                        class="txt date">2021.01.18</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
+
+
 </body>
 
 </html>

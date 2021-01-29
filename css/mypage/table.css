@@ -1,0 +1,31 @@
+.tbl{display:table;table-layout:fixed}
+.tbl_header{display:table-header-group}
+.tbl_row_group{display:table-row-group;}
+.tbl_cell{display:table-cell;text-align:center;}
+
+
+.tbl_header .tbl_cell{border-top:1px solid #cccccc;border-bottom:1px solid #cccccc;background-color:#eeeeee;height:40px;font-size:12px;font-style:normal;color:#333333;vertical-align:middle}
+.tbl_header .tbl_cell.date{width:calc(100vw - 284px);}
+.tbl_header .tbl_cell.sub_members_order_price{width:calc(100vw - 235px);}
+.tbl_header .tbl_cell.fees_price{width:calc(100vw - 267px);}
+.tbl_row_group .tbl_cell{border-bottom:1px solid #cccccc;height:40px;font-size:12px;font-style:normal;color:#333333;vertical-align:middle}
+.tbl_row_group .tbl_cell.commit{color:#ff0000}
+.tbl_row_group .tbl_cell.tbl_empty{display:block;width:calc(100vw - 40px);line-height:40px}
+.tbl_row_group .tbl_cell.date{width:calc(100vw - 284px);}
+.tbl_row_group .tbl_cell.sub_members_order_price{width:calc(100vw - 235px);}
+.tbl_row_group .tbl_cell.fees_price{width:calc(100vw - 267px);}
+
+
+
+
+.tbl_header .tbl_cell.status{width:calc(100vw - 305px);}
+.tbl_header .tbl_cell.cashback_date{width:calc(100vw - 273px);}
+.tbl_header .tbl_cell.order_fees_price{width:calc(100vw - 285px);}
+.tbl_header .tbl_cell.real_fees_price{width:calc(100vw - 285px);}
+.tbl_row_group .tbl_cell.status{width:calc(100vw - 305px);}
+.tbl_row_group .tbl_cell.cashback_date{width:calc(100vw - 273px);}
+.tbl_row_group .tbl_cell.order_fees_price{width:calc(100vw - 285px);}
+.tbl_row_group .tbl_cell.real_fees_price{width:calc(100vw - 285px);}
+
+/* 테이블 옵션 */
+.tbl_center{text-align:center}

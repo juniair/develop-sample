@@ -1,0 +1,82 @@
+.filter_container{}
+.filter_container .modal_overlay{position:fixed;top: 0;left: 0;z-index: 10;padding-top:20px;width: 100%;height:100%;background-color:rgba(0,0,0,0.4);}
+.filter_container .modal_overlay .modal_content{display:block;position:relative;margin: 0px auto;width: calc(100% - 39px);height: calc(100% - 39px);background-color:#ffffff;border-radius:10px;text-align:center;}
+.filter_container .modal_overlay .modal_content .modal_header{display:block;position:relative;width:100%;height:48px;}
+.filter_container .modal_overlay .modal_content .modal_header .txt{font-size:16px;font-weight:bold;color:#333333;line-height:48px}
+.filter_container .modal_overlay .modal_content .modal_header .btn_close{position:absolute;top:12px;right:16px;width:24px;height:24px}
+.filter_container .modal_overlay .modal_content .filter_location_search_component{padding:0 16px;}
+.filter_container .modal_overlay .modal_content .filter_tabs{position:relative}
+.filter_container .modal_overlay .modal_content .filter_tabs_detail{margin-top:16px;padding:0px 16px;}
+.filter_container .modal_overlay .modal_content .tab-component{margin-top:12px;margin-bottom:10px;height:calc(100% - 176px)}
+.filter_container .modal_overlay .modal_content .tab-component .tab-header{border-bottom: 2px solid transparent;height:28px;font-size:14px;font-weight:bold;color:#333333;text-align: center;}
+.filter_container .modal_overlay .modal_content .tab-component .tab-header.on{border-bottom-color:#6d95ec;color:#6d95ec}
+.filter_container .modal_overlay .modal_content .tab-component .tab-headers{display: flex;justify-content: space-between;border-bottom: 1px solid #cccccc;padding:0px 14px;}
+
+.filter_container .modal_overlay .modal_content .tab-component .tab-header.stay{width:34px}
+.filter_container .modal_overlay .modal_content .tab-component .tab-header.rentcar{width:48px}
+.filter_container .modal_overlay .modal_content .tab-component .tab-header.tour{width:34px}
+.filter_container .modal_overlay .modal_content .tab-component .tab-header.food{width:70px}
+.filter_container .modal_overlay .modal_content .tab-component .tab-header.buggy{width:70px}
+
+
+.filter_container .modal_overlay .modal_content .filter_button_group{position:absolute;bottom:16px;width:100%}
+.filter_container .modal_overlay .modal_content .filter_button_group .btn{float:left;height:50px;font-size:16px;font-weight:bold;color:#ffffff}
+.filter_container .modal_overlay .modal_content .filter_button_group .btn_reset{width:17.857142857%;margin-left:16px;background-color:#cccccc}
+.filter_container .modal_overlay .modal_content .filter_button_group .btn_confirm{width:calc(82.142857% - 36px);margin-left:6px;background-color:#ff6600}
+
+.filter_container .modal_overlay .modal_content .filter_tabs_detail{height:calc(100% - 44px);}
+.filter_container .modal_overlay .modal_content .filter_tabs_detail .section_input{height:40px;}
+.filter_container .modal_overlay .modal_content .filter_tabs_detail .section_input.region{margin-top:16px;}
+.filter_container .modal_overlay .modal_content .filter_tabs_detail .section_input.people{margin-top:8px;}
+.filter_container .modal_overlay .modal_content .filter_tabs_detail .section_input.search{margin-top:8px;}
+.filter_container .modal_overlay .modal_content .filter_tabs_detail .section_check.kind{margin-top:26px;}
+.filter_container .modal_overlay .modal_content .filter_tabs_detail .section_check.faci{margin-top:16px;}
+.filter_container .modal_overlay .modal_content .filter_tabs_detail .section_check.hash{margin-top:26px;}
+.filter_container .modal_overlay .modal_content .filter_tabs_detail .section_check.ins{margin-top:6px;}
+.filter_container .modal_overlay .modal_content .filter_tabs_detail .section_check.car_kind{margin-top:6px;}
+
+.filter_container .modal_overlay .modal_content .filter_tabs_detail .section_input .label_txt{float:left;width:70px;text-align:left;line-height:40px}
+.filter_container .modal_overlay .modal_content .filter_tabs_detail .section_input .input-component{float:left;width:calc(100% - 70px);line-height:36px;}
+.filter_container .modal_overlay .modal_content .filter_tabs_detail .section_input .input-component .select_component{padding-left:10px;height:40px;background: url(/images/ico/selectbox/icon_downarrow_40x40.png) no-repeat 100% center;border: 1px solid #cccccc;font-size:14px;font-weight:bold;color:#333333}
+.filter_container .modal_overlay .modal_content .filter_tabs_detail .section_input .input-component .adult,
+.filter_container .modal_overlay .modal_content .filter_tabs_detail .section_input .input-component .child{float:left;--widthA: 100%;--widthB: calc(var(--widthA) - 6px);--widthC: calc(var(--widthB) / 2);width:var(--widthC);}
+.filter_container .modal_overlay .modal_content .filter_tabs_detail .section_input .input-component .child{margin-left:6px}
+.filter_container .modal_overlay .modal_content .filter_tabs_detail .section_input .input-component .input_search{float:left;width: calc(100% - 23px);height:38px;padding:0px 10px;border: 1px solid #cccccc;font-size:14px;font-weight:bold;color:#333333}
+.filter_container .modal_overlay .modal_content .filter_tabs_detail .section_input .input-component .input_search::placeholder{font-size:14px;font-weight:bold;color:#999999}
+
+
+.filter_container .modal_overlay .modal_content .filter_tabs_detail .section_check .label_txt{text-align:left;line-height:16px}
+.filter_container .modal_overlay .modal_content .filter_tabs_detail .section_check .input-component{margin-top:16px;}
+.filter_container .modal_overlay .modal_content .filter_tabs_detail .section_check .input-component .kind_items{}
+.filter_container .modal_overlay .modal_content .filter_tabs_detail .section_check .input-component .kind_items::after{display:block;content:'';clear:both;}
+.filter_container .modal_overlay .modal_content .filter_tabs_detail .section_check .input-component .kind_items .kind_item{float: left;margin-bottom:10px;margin-right:8px;}
+
+/*display: flex;
+    justify-content: space-between;*/
+
+
+/*필터 내 위치 UI CSS 정의*/
+.filter_location_search_component{height:40px}
+.filter_location_search_component dl{height:40px;font-size:14px;font-weight:bold;color:#333333;text-align:left;line-height:40px;}
+.filter_location_search_component dl > dt{float:left;width:70px}
+.filter_location_search_component dl > dd{float:left;position:relative;width:calc(100% - 70px);}
+.filter_location_search_component dl > dd span{display:block;width:calc(100% - 24px);text-decoration: none;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+.filter_location_search_component dl > dd .btn_refresh{position:absolute;top:8px;right:0px;}
+
+
+/*필터 일정 UI CSS 정의*/
+.scheduler_component{height:50px;}
+.scheduler_component .btn_open_calendar{display: flex;position: relative;justify-content: space-between;width:100%;height:50px}
+.scheduler_component .btn_open_calendar .label_date{height:50px;}
+.scheduler_component .btn_open_calendar .label_date .txt{display:none;}
+.scheduler_component .btn_open_calendar .label_date dd{line-height:42px;}
+.scheduler_component .btn_open_calendar .label_date .day{display: inline-block;color: #333333;font-size: 24px;font-weight: bold;line-height: 24px;vertical-align: text-top;}
+.scheduler_component .btn_open_calendar .label_date small{display: inline-block;color: #666666;font-size: 12px;line-height: 15px;vertical-align: text-top;text-align:center;}
+.scheduler_component .btn_open_calendar .label_date .year{display:block}
+.scheduler_component .btn_open_calendar .label_date .week_of_day{display:block}
+.scheduler_component .btn_open_calendar .label_date .time{display:block}
+.scheduler_component .btn_open_calendar .diff{display: inline-block;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);width:40px;height:40px;border: 1px solid #2055c5;background-color: #2055c5;border-radius: 50%;font-size: 16px;font-weight: bold;color: #ffffff;line-height:40px;}
+
+.rentcar .scheduler_component .btn_open_calendar .label_date{line-height:inherit;}
+.rentcar .scheduler_component .btn_open_calendar .label_date dd{line-height:inherit;}
+.rentcar .scheduler_component .btn_open_calendar .label_date .day{line-height:45px;}

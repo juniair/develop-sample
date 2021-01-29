@@ -1,0 +1,4 @@
+.advance_option_display_component{order: 2;width: 100%;border-top: 1px solid #ececec;/* background-color: #ff9900; */background: #fff;}
+.advance_option_display_component .category_list{display: flex;width: 100%;justify-content: space-around;background-color:#ffffff;}
+
+.advance_option_display_component.fixed{position: fixed;width: 100%;top: 0;left: 0;z-index: 1;}

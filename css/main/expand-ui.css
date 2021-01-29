@@ -1,0 +1,7 @@
+/* Extand UI style overried */
+.card {background-color: #F7F7F7 !important;}
+.card-header-title {font-size: 1rem !important; color: #333333 !important; padding: 0px !important;}
+.card-header-title .has-text-weight-normal {font-weight: normal;}
+.card-header-icon {padding: 0px !important;}
+
+.card-content {padding: 0 12px !important;}

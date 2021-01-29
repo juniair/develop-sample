@@ -1,0 +1,63 @@
+/*
+ * 파일명 : color.css
+ * 작성자 : 김경준
+ * 작성일 : 2020-02-11
+ * 수정일 : 2020-02-11
+ * 설명란 : 
+*/
+
+/* font color */
+.font_black_000{color: #FFFFFF !important;}
+.font_black_010{color: #E5E5E5 !important;}
+.font_black_020{color: #CCCCCC !important;}
+.font_black_030{color: #B2B2B2 !important;}
+.font_black_040{color: #999999 !important;}
+.font_black_050{color: #7F7F7F !important;}
+.font_black_060{color: #666666 !important;}
+.font_black_070{color: #4C4C4C !important;}
+.font_black_080{color: #323232 !important;}
+.font_black_090{color: #191919 !important;}
+.font_black_100{color: #000000 !important;}
+
+
+.font_space_blue_100{color: #2055c5 !important;}
+
+/* background color */
+.bg_black_000{background-color: #FFFFFF !important;}
+.bg_black_010{background-color: #E5E5E5 !important;}
+.bg_black_020{background-color: #CCCCCC !important;}
+.bg_black_030{background-color: #B2B2B2 !important;}
+.bg_black_040{background-color: #999999 !important;}
+.bg_black_050{background-color: #7F7F7F !important;}
+.bg_black_060{background-color: #666666 !important;}
+.bg_black_070{background-color: #4C4C4C !important;}
+.bg_black_080{background-color: #323232 !important;}
+.bg_black_090{background-color: #191919 !important;}
+.bg_black_100{background-color: #000000 !important;}
+
+.bg_black_op_000{background-color: rgb(0,0,0,0.0) !important;}
+.bg_black_op_010{background-color: rgb(0,0,0,0.1) !important;}
+.bg_black_op_020{background-color: rgb(0,0,0,0.2) !important;}
+.bg_black_op_030{background-color: rgb(0,0,0,0.3) !important;}
+.bg_black_op_040{background-color: rgb(0,0,0,0.4) !important;}
+.bg_black_op_050{background-color: rgb(0,0,0,0.5) !important;}
+.bg_black_op_060{background-color: rgb(0,0,0,0.6) !important;}
+.bg_black_op_070{background-color: rgb(0,0,0,0.7) !important;}
+.bg_black_op_080{background-color: rgb(0,0,0,0.8) !important;}
+.bg_black_op_090{background-color: rgb(0,0,0,0.9) !important;}
+.bg_black_op_100{background-color: rgb(0,0,0,1.0) !important;}
+
+/* boder color */
+.border_black_000{border-color: #FFFFFF !important;}
+.border_black_010{border-color: #E5E5E5 !important;}
+.border_black_020{border-color: #CCCCCC !important;}
+.border_black_030{border-color: #B2B2B2 !important;}
+.border_black_040{border-color: #999999 !important;}
+.border_black_050{border-color: #7F7F7F !important;}
+.border_black_060{border-color: #666666 !important;}
+.border_black_070{border-color: #4C4C4C !important;}
+.border_black_080{border-color: #323232 !important;}
+.border_black_090{border-color: #191919 !important;}
+.border_black_100{border-color: #000000 !important;}
+
+.bg_sky_000{ background-color: #00adef !important;}

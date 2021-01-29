@@ -1,0 +1,287 @@
+html, body {scroll-behavior: smooth}
+
+#containerWrapper {position:relative;box-sizing:border-box;font-size:0;}
+
+
+#sideBar {position:fixed;top:0;width:100%;height:100vh;background:rgba(0,0,0,0.2);z-index:9999}
+#sideBar.side_menu {
+    transform:translateX(-100%);
+    transition-duration: .2s;
+    transition-timing-function: ease;
+}
+#sideBar.side_menu.open {
+    left:0;
+    transform:translateX(0px);
+    -webkit-transform:translateX(0px);
+    -moz-transform:translateX(0px);
+    -ms-transform:translateX(0px);
+    -o-transform:translateX(0px);
+}
+
+.smooth_scroll {scroll-behavior:smooth;}
+.fixed_scroll {overflow-y:hidden;}
+
+.side_menu .side_menu_content {position:relative;overflow:auto;width:80%;height:100%;background:#fff}
+.side_menu .side_menu_content .btn_side_menu__close {position:absolute;top:24px;right:10px}
+.side_menu .side_menu_content .btn_group {box-sizing:border-box;}
+.side_menu .side_menu_content .btn_group .btn {width:50%;height:40px;box-sizing:border-box;text-align:center;text-decoration:none;font-size:14px}
+.side_menu .side_menu_content .btn_group .btn.btn_sign_in {display:inline-block;border:1px solid #000;background:#000;color:#fff;line-height:36px;}
+.side_menu .side_menu_content .btn_group .btn.btn_sign_up {display:inline-block;border:1px solid #a5a5a5;background:#fff;color:#000;line-height:36px;vertical-align:top;}
+
+.side_menu .side_menu_content .side_menu_items {box-sizing:border-box;}
+.side_menu .side_menu_content .side_menu_items .side_menu_item {}
+.side_menu .side_menu_content .side_menu_items .side_menu_item > .btn_sub_menu__show {position:relative;width:100%;height:40px;text-align:left;font-size:16px;color:#c00}
+.side_menu .side_menu_content .side_menu_items .side_menu_item > a.btn_sub_menu__show {display:block;line-height:40px}
+.side_menu .side_menu_content .side_menu_items .side_menu_item > .btn_sub_menu__show .icon {
+    position:absolute;
+    top:16px;
+    right:0;
+    transform:rotate(0deg);
+    -webkit-transform:rotate(0deg);
+    -moz-transform:rotate(0deg);
+    -ms-transform:rotate(0deg);
+    -o-transform:rotate(0deg);
+    transition-duration: .2s;
+    transition-timing-function: ease;
+}
+.side_menu .side_menu_content .side_menu_items .side_menu_item.active > .btn_sub_menu__show .icon {
+    transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -ms-transform:rotate(180deg);
+    -o-transform:rotate(180deg);
+}
+
+.side_menu .side_menu_content .side_menu_items .side_menu_item .sub_menu_items {
+    max-height:0;
+    overflow: hidden;
+    transition:all .15s ease-out;
+    -webkit-transition:all .15s ease-out;
+    -moz-transition:all .15s ease-out;
+    -ms-transition:all .15s ease-out;
+    -o-transition:all .15s ease-out;
+}
+
+.side_menu .side_menu_content .side_menu_items .side_menu_item.active .sub_menu_items {
+    padding-top:3px;
+    padding-bottom:13px;
+    max-height: 100vh;
+}
+
+.side_menu .side_menu_content .side_menu_items .side_menu_item .sub_menu_items .sub_menu_item {height:30px;}
+.side_menu .side_menu_content .side_menu_items .side_menu_item .sub_menu_items .sub_menu_item .txt {font-size:14px;color:#111;line-height:26px}
+
+
+
+.container {position:relative}
+.container .slide_content.other {
+    width:100%;
+    height:100vh;
+    background-image:url(/images/signin/img_01_login_background_750x1642_x2.jpg);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+}
+.container .slide_content:not(.other) {
+    width:100%;
+    box-sizing:border-box;
+    z-index:100;
+    transform:translateY(0px);
+    -webkit-transform:translateY(0px);
+    -moz-transform:translateY(0px);
+    -ms-transform:translateY(0px);
+    -o-transform:translateY(0px);
+    transition-duration: .2s;
+    transition-timing-function: ease;
+}
+.container .slide_content:not(.other).focus {
+    transform:translateY(-94vh);
+    -webkit-transform:translateY(-94vh);
+    -moz-transform:translateY(-94vh);
+    -ms-transform:translateY(-94vh);
+    -o-transform:translateY(-94vh);
+}
+.container .slide_content.focus img {height:100%}
+.container .side_menu_header {position:relative;width:100%;height:150px}
+.container .side_menu_header::after {display:block;content:'';height:30px;background:linear-gradient(to top, #fff, rgba(255,255,255,0));}
+.container .side_menu_header .header_img {width:100%;height:150px;object-fit: cover;object-position: 0 24%;}
+.container .btn_side_menu__show {position:absolute;top:16px;left:15px;z-index:110;}
+.container .btn_introduce__to_visit {
+    display:inline-block;
+    position:absolute;
+    top:16px;
+    right:9px;
+    width:130px;
+    height:35px;
+    border:1px solid #fff;
+    border-radius: 17.5px;
+    -webkit-border-radius: 17.5px;
+    -moz-border-radius: 17.5px;
+    -ms-border-radius: 17.5px;
+    -o-border-radius: 17.5px;
+    box-sizing:border-box;
+    font-size:15px;
+    color:#fff;
+    text-align: center;
+    line-height:32px;
+    z-index:110;
+}
+
+
+
+.container .btn_login_form {
+    position:fixed;
+    top:86.50674662668666%;
+    left:50%;
+    width:50px;
+    height:50px;
+    background:rgba(255,255,255, 0.5);
+    box-sizing:border-box;
+    border-radius:100%;
+    -webkit-border-radius:100%;
+    -moz-border-radius:100%;
+    -ms-border-radius:100%;
+    -o-border-radius:100%;
+    z-index:120;
+    transform:translate(-25px, 0);
+    -webkit-transform:translate(-25px, 0);
+    -moz-transform:translate(-25px, 0);
+    -ms-transform:translate(-25px, 0);
+    -o-transform:translate(-25px, 0);
+    transition-duration: .2s;
+    transition-timing-function: ease;
+}
+.container .btn_login_form.focus {
+    top:40px;
+    transform:translate(-25px, 0);
+    -webkit-transform:translate(-25px, 0);
+    -moz-transform:translate(-25px, 0);
+    -ms-transform:translate(-25px, 0);
+    -o-transform:translate(-25px, 0);
+}
+
+.container .login_form {box-sizing:border-box}
+.container .login_form .link_txt {display:inline-block;font-size:14px;color:#303030;line-height:18px}
+.container .login_form .link_txt + .boundury {display:inline-block;font-size:14px;color:#303030;line-height:18px}
+.container .login_form .input_component_group {display:inline-block}
+.container .login_form .sigin_content .input_component_group {width:calc(100% - 96px)}
+.container .login_form .member_help_link_group {display:block;float:right;}
+.container .login_form .btn_sign_in {display:inline;margin-left:9px;width:86px;height:86px; background:#2055c5; border:1px solid #2055c5;box-sizing:border-box;font-size:16px;color:#fff }
+.container .login_form .btn_join {display:block;width:100%; height:45px; background:#fff; border:1px solid #333; border-radius:4px; -webkit-border-radius:4px; -moz-border-radius:4px; -ms-border-radius:4px; -o-border-radius:4px; box-sizing:border-box;text-align:center;font-size:16px; color:#333;line-height:42px; }
+
+
+.container .addition_component_group {text-align:center;}
+.container .addition_component_group .addition_link {display:inline-block}
+
+.container .btn_infomation__show { position:relative; width:100%; height:40px; border-top:1px solid #acacac;box-sizing:border-box; background:#fff; font-weight:bold; font-size:14px; color:#111; }
+.container .btn_infomation__show .icon { position:absolute; top:16px; right:15px; transform: rotate(180deg); -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); }
+
+/* 안내사항 및 회사 정보 UI 정의 */
+.container .infomation_content {
+    position:fixed;
+    bottom:0;
+    background:#fff;
+    width:100%;
+    height:100%;
+    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transition-duration: .2s;
+    transition-timing-function: ease;
+    z-index:1000;
+}
+
+.container .infomation_content.show {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+
+.container .infomation_content #header > button {position:absolute;top:0;right:0}
+.container .infomation_content #header > button .icon {position: relative;}
+.container .infomation_content .body {position:relative;overflow:auto;height:100%;box-sizing:border-box;}
+.container .infomation_content .body .link_group {}
+.container .infomation_content .body .link_group > a {display:inline-block;width:33.3%;height:30px;border-top:1px solid;border-bottom:1px solid;border-color:#ccc;box-sizing:border-box;text-align:center;font-size:11px;color:#333;line-height:28px;}
+.container .infomation_content .body .link_group > a:first-child {border-right:0 solid #ccc;border-left:1px solid #ccc}
+.container .infomation_content .body .link_group > a:nth-child(n+1):not(:first-child):not(:last-child) {border-right:0 solid #ccc;border-left:0 solid #ccc}
+.container .infomation_content .body .link_group > a:last-child {border-right:1px solid #ccc;border-left:0 solid #ccc}
+.container .infomation_content .body .copyright{text-align:center;box-sizing:border-box;}
+/* 안내사항 및 회사 정보 UI 정의 [end] */
+
+
+/* 로그인 페이지에서 사용하는 컴포넌트 정의 */
+
+.sign_in_form_component {
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    margin:0 10px;
+    padding: 6px 0 6px;
+    border-radius:4px;
+    box-sizing:border-box;
+    background-color:#fff;
+    -webkit-transform:translateY(-50%);
+    -moz-transform:translateY(-50%);
+    -ms-transform:translateY(-50%);
+    -o-transform:translateY(-50%);
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    -ms-border-radius:4px;
+    -o-border-radius:4px;
+}
+
+.sign_in_form_component .header {font-size:32px;text-align:center;color:#000;margin-bottom:26px;padding: 16px 9px 16px 9px;border-bottom: 1px solid #000;box-sizing: border-box;}
+
+.accordion_component {width:100%;overflow:hidden}
+.accordion_component input[type="checkbox"],
+.accordion_component input[type="radio"] {display:none}
+.accordion_component .accordion_label {display:block;position:relative;height:40px;}
+.accordion_component .accordion_label .txt {font-size:18px;color:#c00;line-height:36px}
+.accordion_component .accordion_label .icon {
+    position:absolute;
+    top:16px;
+    right:0;
+    transform:rotate(0deg);
+    -webkit-transform:rotate(0deg);
+    -moz-transform:rotate(0deg);
+    -ms-transform:rotate(0deg);
+    -o-transform:rotate(0deg);
+    transition-duration: .2s;
+    transition-timing-function: ease;
+}
+.accordion_component input[type="checkbox"]:checked + .accordion_label .icon,
+.accordion_component input[type="radio"]:checked + .accordion_label .icon {
+    transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -ms-transform:rotate(180deg);
+    -o-transform:rotate(180deg);
+}
+
+
+.input_component {padding:0 12px;width:100%;height:35px;border:1px solid #666;box-sizing:border-box;font-size:15px;color:#303030}
+.input_component:focus{outline-width:0}
+
+.checkbox_component {display:inline-block;box-sizing:border-box}
+.checkbox_component .label {display:inline-block;margin-top:-1px;height:18px;font-size:14px;color:#303030;line-height:18px;}
+.checkbox_component .input {display:inline-block;width:18px;height:18px;background:#fff;border:1px solid #000;box-sizing:border-box;vertical-align:top}
+.checkbox_component .input input[type="checkbox"] {display:none;}
+.checkbox_component .input input[type="checkbox"] + .control {display:inline-block;width:16px;height:16px;text-indent:-9999px;}
+.checkbox_component .input input[type="checkbox"]:checked + .control {background:url(/images/ico/signin/icon_mobile_login_x1.png)no-repeat 0 0;background-position:0 -20px}
+/* 로그인 페이지에서 사용하는 컴포넌트 정의 [end]*/
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+    .checkbox_component .input input[type="checkbox"]:checked + .control {background:url(/images/ico/signin/icon_mobile_login_x2.png) no-repeat top left / 270px 210px;background-position:0 -20px}
+}

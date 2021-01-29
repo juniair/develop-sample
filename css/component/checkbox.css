@@ -1,0 +1,7 @@
+.checkbox-component{display:inline-block;width:fit-content;height:fit-content}
+.checkbox-component input[type="radio"],
+.checkbox-component input[type="checkbox"]{}
+.checkbox-component input[type="radio"] + label,
+.checkbox-component input[type="checkbox"] + label{display:inline-block;border:1px solid #cccccc;border-radius:35px;padding:0px 10px;height:38px;font-size:14px;color:#333333;line-height:36px;}
+.checkbox-component input[type="radio"]:checked + label,
+.checkbox-component input[type="checkbox"]:checked + label{border-color: #2055c5;background-color: #2055c5;color: #ffffff;}

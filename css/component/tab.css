@@ -1,0 +1,8 @@
+.tab-component .tabs{position: fixed;top: 0;left: 0;width: 100%;background-color: #ffffff;z-index: 1;}
+.tab-component .tabs .tab-header button{width:100%;height:100%}
+.tab-component .tabs-details{height: calc(100% - 60px - 57px);padding: 60px 0 57px 0;overflow-y: scroll}
+
+
+.search-tabs-componen .tabs{width:100%;background-color:#fff;z-index: 1;}
+.search-tabs-componen .tabs .tab-header button{width:100%;height:100%}
+.search-tabs-componen .tabs-details{height: calc(100% - 60px - 57px);padding: 60px 0 57px 0;overflow-y: scroll}

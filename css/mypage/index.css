@@ -1,0 +1,32 @@
+.list_discount{display: flex;flex: 1;flex-wrap: wrap;margin: 5px 0;}
+.list_discount li{flex-basis: 50.0%;display: flex;margin: 5px 0;}
+.list_discount li .icon_member_yellow {margin-right: 2px;}
+.list_discount li p {display: inline-block;padding-top: 4px;margin-left:6px;font-size: 14px;}
+.list_discount li p b {text-decoration: underline;}
+.list_discount li span {font-size: 12px;}
+
+
+
+.btn_mypage_main {float:left;width: calc(33.3% - 4px);}
+.btn_mypage_main + .btn_mypage_main{margin-left:4px;}
+
+.btn_mypage_main.txt,
+.btn_mypage_main .txt{height:48px;border: 1px solid;border-radius:3px;font-size:14px;letter-spacing:-1px}
+.btn_mypage_main.txt{border-color:transparent;background-color:#ff6600;color:#ffffff;}
+.btn_mypage_main .txt{display:block;border-color:#000000;color:#333333;text-align:center;line-height:48px;}
+
+
+.frm_mypage_profits_detail{height: 40px;padding: 0 12px;text-align: center;}
+
+.select_mypage_profits_detail_year{padding-left: 12px;background: url(/images/s_images/itemReviewList_arrow01.gif) no-repeat;background-size: 13px 7px;background-position: center right 18px;background-position: center right 1.125rem;width: 114px;height: 40px;text-align: center}
+.btn_submit{width:78px;height:40px;background-color:#000000 !important;color: #fff !important;line-height: 40px}
+
+
+.profits_gave_date_tab_component{position:relative;overflow:hidden;}
+.profits_gave_date_tab_component .txt_caption{font-size:12px;color:#333333;font-style:normal}
+.profits_gave_date_tab_component .tab_date_select{clear:both;overflow:hidden;}
+.profits_gave_date_tab_component .tab_date_select .tab_header{float:left;border:1px solid #cccccc;width:18.29%;height:28px;font-size:12px;text-align:center;line-height:26px}
+.profits_gave_date_tab_component .tab_date_select .tab_header + .tab_header{margin-left:1.4%;}
+.profits_gave_date_tab_component .tab_date_select .tab_header.on{border-color:#ff6600;background-color:#ff6600}
+.profits_gave_date_tab_component .tab_date_select .tab_header .tab_link{color:#333333}
+.profits_gave_date_tab_component .tab_date_select .tab_header.on .tab_link{color:#ffffff}

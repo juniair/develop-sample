@@ -1,0 +1,12 @@
+.select_component{background: url("/images/ico/selectbox/icon_downarrow_40x40.png")  no-repeat 110% center;width:100%}
+.label_txt{font-size:14px;font-weight:bold;color:#333333}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+			.select_component{background: url("/images/ico/selectbox/icon_downarrow_80x80.png") no-repeat 110% center;}
+}

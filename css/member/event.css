@@ -1,0 +1,9 @@
+.event_wrapper {padding:4.1979vh 6.9333vw;width:100%;height:35.3823vh;box-sizing:border-box;background-color:#f8f6e7;font-size:0;}
+.event_wrapper .txt {display:block;margin-bottom:3.898050974512744vh;font-size:calc(3.8vw + 8px);color:#590195;line-height:4.1979vh;}
+.event_wrapper .link_group {display:inline-block;width:32.53333333333333vw;padding-top:2.6987vh;padding-bottom:2.3988vh;box-sizing:border-box;}
+.event_wrapper .link_group .btn_link { display:inline-block;padding:0.5997001499250375vh 0;width:100%;height:3.598200899550225vh; background-color:#670099; border-radius: 35px; -webkit-border-radius: 35px; -moz-border-radius: 35px; -ms-border-radius: 35px; -o-border-radius: 35px;box-sizing:border-box;font-size:3.2vw;color:#fff;text-align: center;letter-spacing:-1px;}
+.event_wrapper .link_group .btn_link + .btn_link {margin-top:0.8996vh}
+.event_wrapper .link_group .btn_link .icon {vertical-align: middle;width:4.2667vw;height:4.2667vw;background-size:4.2667vw 4.2667vw;;}
+
+.event_wrapper .img_coujuseon_roles {display:inline-block;width:48.53333333333333vw;height:13.19340329835082vh}
+.event_wrapper .link_group + .img_coujuseon_roles {margin-left:5.066666666666667vw;}

@@ -1,0 +1,7 @@
+.btn_around_map,
+a.btn_around_map,
+button.btn_around_map{display: block !important;padding:0px 0px 0px 8px;border-top:1px solid #eeeeee;border-bottom: 0px solid #eee;background:#ffffff;width:100%;height:40px;font-size:14px;color:#333333 !important;text-align:left;justify-content: initial !important;}
+a.btn_around_map{line-height:40px;}
+
+.btn_around_map_toggle,
+.btn_favorite{width:100%;height:100%;}

@@ -1,0 +1,286 @@
+@charset "UTF-8";
+body{font-size:0px}
+#wrap {}
+.logo {}
+.logo.top{width:100%;}
+.logo a {
+	display: block;
+	width: 250px;
+	/*width: 11.88rem;*/
+	height: 45px;
+	/*height: 2.875rem;*/
+	margin: 0 auto;
+}
+.logo a img{
+	width: 100%;
+	height: 100%;
+}
+.login_area {margin-top:20px;margin-right:18px;margin-bottom:20px;margin-left:18px;}
+.login_area .logo{display:block;margin-top:0px;margin-right:auto;margin-bottom:0px;margin-left:auto; width:248px;height:32px;}
+.login_area input[type=text],
+.login_area .txt_info {padding-left:20px;border: 1px solid #afc4e4;border-radius:35px;background-color:#eff2f7;width: 100%;height:50px;font-size: 14px;color: #333333;box-sizing: border-box;}
+.login_area input[type=submit]{
+	width: 100%;
+	height: 60px;
+	height: 3.75rem;
+	border: 0;
+	background-color: #f8641c;
+	color: #fff;
+	font-size: 1.125em;
+	font-size: 1.125rem;
+}
+
+.login_area .btn{border:1px solid transparent;border-radius:35px;width:100%;height:50px;font-size:14px;box-sizing: content-box;-webkit-box-sizing: content-box;-moz-box-sizing: content-box}
+.login_area .btn.btn_sign_in{border-color:#2055c5;background-color:#2055c5;color:#ffffff}
+.login_area .btn.btn_sign_up{display:block;border-color:#333333;text-align:center;color: #333333;line-height:48px;}
+.check_info{margin-top:14px;margin-right:0px;margin-bottom:14px;margin-left:0px;}
+.check_info:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.check_info .login_check {
+	float: left;
+	margin-right: 18px;
+	margin-right: 1.125rem;
+}
+.check_info .id_save {
+	float: left;
+}
+
+
+.chkbox_01 {position: relative;} 
+/* 실제 체크박스는 화면에서 숨김 */
+.chkbox_01 input[type="checkbox"] {position: absolute;width: 1px;height: 1px;padding: 0;margin: -1px;overflow: hidden;clip:rect(0,0,0,0);border: 0} 
+.chkbox_01 input[type="checkbox"] + label {
+	display: inline-block;
+	position: relative;
+	font-size: 14px;
+	color: #333333;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	line-height:22px;
+}
+/* 가짜 체크박스 */
+.chkbox_01 input[type="checkbox"] + label:before {content: ' ';display: inline-block;overflow: hidden;padding-right:6px;width:24px;height:24px;background: url(/images/ico/checkbox/icon_check_x1.png) no-repeat 0 0;background-position:0px 0px;vertical-align: top;text-indent: -9999px}
+.chkbox_01 input[type="checkbox"]:checked + label:before {background-position:-30px 0px;}
+
+.login_area .loginBtm{text-align:center;}
+
+.login_area .loginBtm .btnQustion02,
+.login_area .loginBtm .find_link{font-size:14px;color:#333333}
+.login_area .loginBtm .find_link{padding-top:0px;padding-right:14px;padding-bottom:0px;padding-left:14px;border-left:1px solid #333333;}
+.login_area .btnQustion02 .icon_help {
+	display: inline-block;
+	width: 18px;
+	width: 1.125rem;
+	height: 18px;
+	height: 1.125rem;
+	border: 1px solid #000;
+	border-radius: 50%;
+	font-weight: bold;
+	line-height: 18px;
+	line-height: 1.125rem;
+	margin-left: -2px;
+}
+
+.login_area .findWrap {
+	grid-area: find;
+}
+.login_area .icon_help {
+	width: 18px;
+	width: 1.125rem;
+	height: 18px;
+	height: 1.125rem;
+	border: 1px solid #000;
+	border-radius: 50%;
+	font-weight: bold;
+	line-height: 18px;
+	line-height: 1.125rem;
+	/* text-align: ; */
+}
+/* .login_area .wharMembersWrap > .btnQustion02::after{
+	content: '?';
+	display: block;
+	float: left;
+	width: 22px;
+	width: 1.375rem;
+	height: 22px;
+	height: 1.375rem;
+	border: 1px solid #000;
+	border-radius: 50%;
+	font-weight: bold;
+	line-height: 22px;
+	line-height: 1.375rem;
+} */
+.login_area .wharMembersWrap > .btnQustion02 > span{
+	margin-right: 5px;
+	margin-right: 0.3125rem;
+	line-height: 22px;
+	line-height: 1.375rem;
+	font-size: 0.875rem;
+}
+.login_area .findAccountWrap > .findAccountList{*zoom: 1;}
+.login_area .findAccountWrap > .findAccountList:after{content: '';display: block;clear: both;}
+.login_area .findAccountWrap > .findAccountList > li{float: left;}
+.login_area .findAccountWrap > .findAccountList > li + li:before{
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    height: 0.625rem;
+    margin: 0 8px;
+    margin: 0 0.5rem;
+    background-color: #333;
+}
+
+
+.login_area .findAccountWrap > .findAccountList > li > a{
+	display: inline-block;
+	color: #333;
+	font-size: 14px;
+	font-size: 0.875rem;
+	line-height: 22px;
+	line-height: 1.375rem;
+}
+
+.banner_content{}
+.banner_content.banner_list{width:100%;}
+.banner_list .banner_item{width:100%;}
+.banner_list .banner_item .banner_img{width:100%;}
+
+.descriptions {margin: 0px 18px;font-size:14px;color:#333333;letter-spacing:-1px;} 
+.descriptions li {
+    margin: 0px 18px;
+    list-style: disc !important;
+    line-height:24px;
+}
+
+.store_content{text-align:center;}
+.store_content .store_link
+
+.footer{padding:20px 18px;background:#303030 !important}
+.footer .txt{font-size:10px;color:#333333;line-height:18px;}
+.footer .txt dd::before{content: " : ";}
+.footer .txt.link{display:inline-block;border:1px solid #333333;width:31.27%;height:28px;text-align:center;line-height:27px;}
+.footer .social_content{text-align:center;}
+.loginFooterMsg{
+	font-size:1rem;
+	font-weight:500;
+	width:100%;
+	text-align:center;
+	line-height:1.5rem;
+	color:#333333;
+}
+.di_no{display:none;}
+.loginLogo{
+	font-size:1.05rem;
+	color:#f8641c;
+}
+
+.loginLogoPoint{
+	font-size:1.05rem;
+	color:#000
+}
+.modalWindow {
+	display: none;
+	position: fixed;
+	/* padding-left: 10px;
+    padding-top: 30px; */
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+}
+.modalWindow .helpCTMembers {
+	display: none;
+	width: 100%;
+	height: 100%;
+	border-radius: 8px;	
+	/* background: url(/images/logo_1.png) no-repeat;
+	background-position: center bottom 34px; */
+	background-color: #fff;	
+	/* background-size: 266px 38px;  */
+
+}
+.helpCTMembers .help_img {
+	margin-top: 50px;
+	text-align: center;
+}
+.helpCTMembers .help_img .logo_img {
+	width: 133px;
+	height: 19px;
+}
+.helpCTMembers .help_msg{
+	margin: 0 30px;
+	padding-top: 40px;
+}
+.helpCTMembers .help_msg h3{
+	color:  #cc3300;
+	padding: 15px 0 9px 0;
+	font-size: 22px;
+	font-weight: 500;
+	line-height: 20px;
+}
+.helpCTMembers .help_msg p{
+	color: #000;
+	margin: 10px 0;
+	font-size: 16px;
+	font-weight: 350;
+	line-height: 24px;
+}
+
+.helpCTMembers .help_msg .how_to.logo{display:block;width:160px;margin-left:auto;margin-right:auto;margin-bottom:32px;padding-top:0px;}
+.helpCTMembers .help_msg .how_to.process{display:block;width:200px;margin:20px auto 20px auto;padding-top:0px;}
+.helpCTMembers .help_msg .info_list .info_content{}
+.helpCTMembers .help_msg .info_list .info_content + .info_content{margin-top:30px}
+.helpCTMembers .help_msg .info_list .info_content .info_header{font-size:16px;color:#2055c5;font-weight:bold}
+.helpCTMembers .help_msg .info_list .info_content .info_header .txt{font-style:normal}
+.helpCTMembers .help_msg .info_list .info_content .info_desc{margin-top:10px;font-size:12px;color:#333333;letter-spacing:-2px;line-height:22px}
+.helpCTMembers .help_msg .info_list .info_content .info_desc .txt{margin-top:10px;margin-bottom:0px;font-size:12px;color:#333333;letter-spacing:-2px;line-height:19px}
+
+.helpCTMembers button.close{
+    position: absolute;
+    top: 32px;
+    right: 18px;
+
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background: url(/images/close02.gif) no-repeat;
+    background-size: 20px;
+    text-indent: -9999px;
+}
+
+.check_info .link_find_company {
+    /* float: left; */
+    height: 1.438rem;
+    text-align: end;
+}
+
+.link_find_company a {font-size: 14px;color: #333333;line-height:24px;}
+
+.help_description {
+    color: #ff0000;
+    line-height: 1.4375;
+    font-size: .875rem;
+    margin: 1.03125rem 1.125rem 0rem 1.125rem;
+}
+
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+
+	/* .chkbox_01 input[type="checkbox"] + label:before {padding-right:2px;background: url(/images/ico/checkbox/icon_check_x2.png) no-repeat top left / 60px 24px;background-position:0px 0px}
+
+.chkbox_01 input[type="checkbox"]:checked + label:before {background-position:-30px 0px;} */
+}
