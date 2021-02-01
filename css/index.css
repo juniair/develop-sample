@@ -22,7 +22,7 @@
 }
 .cart_caution::after {
     position:absolute;
-    top:46px;
+    top:45px;
     left:0;
     width:100%;
     content:"";
@@ -35,4 +35,12 @@
 .cart_caution::before {
     content:"※";
     margin-left:-12px;
+}
+
+.cart_start {
+    margin-top:100px;
+}
+
+.cart_txt_all {
+    
 }
