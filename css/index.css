@@ -1,46 +1,50 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
+.cart_selecting_section .cart_selecting_all {
+    justify-content: unset;
+}
 
 .cart_caution_parant {
     flex-direction: column;
     height:100px !important;
     box-sizing: border-box;
-
-    
 }
-.cart_caution {
-    float:right;
-    padding:10px 25px 10px 0;
-    margin-left:14px;
-    width: 100%;
+
+.caution_container {
+    
+    padding: 10px 14px 10px 14px; 
+    border-top:1px solid #eee;
     box-sizing: border-box;
+}
+
+.cart_caution {
+    width: 100%;
     font-family: 'Nanum Gothic', sans-serif;
     font-size:12px;
     font-style:normal;
     line-height:16px;
 }
-.cart_caution::after {
+
+/* 가운데 줄 */
+/* .cart_caution::after {
     position:absolute;
     top:45px;
     left:0;
     width:100%;
+    height:1px;
     content:"";
     border-top:1px solid #eee;
     box-sizing:border-box;
-    height:1px;
-    
+} */
 
-}
+/* 당구장 마크 */
 .cart_caution::before {
-    content:"※";
     margin-left:-12px;
+    content:"※";
 }
 
 .cart_start {
     margin-top:100px;
 }
 
-.cart_txt_all {
-    
-}
